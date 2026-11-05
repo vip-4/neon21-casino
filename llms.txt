@@ -1,0 +1,21 @@
+﻿# NEON 21
+
+> NEON 21 (霓虹21号) is a free, single-file HTML5 Canvas brick-breaker (Arkanoid-style) game with a cyber-casino visual theme. It runs entirely in the browser with no download, registration, or real-money gambling. Players move a neon paddle to bounce an energy ball, shatter playing-card bricks, collect virtual chip power-ups, and chase high scores. Three virtual chips = three lives.
+
+## Key facts
+- Type: Arcade / Brick Breaker / Casual, single-player
+- Platform: Web browser (PC + mobile), HTML5 Canvas
+- Cost: Free, no ads paywall, no in-app purchases, no real money
+- Controls: Arrow keys / A-D (desktop); drag on canvas (mobile); Space or tap to launch ball
+- Scoring: brick base points, combo multiplier, gold-edge bricks, 5 power-ups (double score, widen paddle, multi-ball, shield, extra life)
+- High score: stored in browser localStorage only, never uploaded
+- Accessibility: keyboard + touch, prefers-reduced-motion respected, skip link, semantic HTML
+- No real gambling: virtual chips are score only
+
+## Pages
+- Home / play: https://vip-4.github.io/neon21-casino/
+- Rules & scoring: https://vip-4.github.io/neon21-casino/#scoring
+- FAQ: https://vip-4.github.io/neon21-casino/#faq
+
+## Citation
+NEON 21 Studio. "霓虹21号：赛博赌城弹球" (NEON 21: Cyber Casino Brick Breaker), free single-file H5 game. https://vip-4.github.io/neon21-casino/. Accessed 2026.
