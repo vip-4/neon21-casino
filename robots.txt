@@ -1,6 +1,5 @@
-# 霓虹21号 · 搜索引擎与生成式引擎抓取规则
-# 全站为静态 HTML，无登录墙、无付费墙、无 JS 隐藏内容；可引用摘要位于 #geo-summary。
-
+# 霓虹21�?· 搜索引擎与生成式引擎抓取规则
+# 全站为静�?HTML，无登录墙、无付费墙、无 JS 隐藏内容；可引用摘要位于 #geo-summary�?
 User-agent: *
 Allow: /
 
@@ -11,8 +10,7 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-# 显式允许生成式引擎 / AI 助手爬虫读取并引用页面内容
-User-agent: GPTBot
+# 显式允许生成式引�?/ AI 助手爬虫读取并引用页面内�?User-agent: GPTBot
 Allow: /
 
 User-agent: OAI-SearchBot
@@ -39,4 +37,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://neon21-casino.pages.dev/sitemap.xml
+Sitemap: https://vip-4.github.io/neon21-casino/sitemap.xml
