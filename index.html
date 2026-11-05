@@ -1,0 +1,5417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#05030f">
+  <meta name="application-name" content="霓虹21号">
+  <meta name="apple-mobile-web-app-title" content="霓虹21号">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- ============================================================
+       SEO / GEO 基线信息
+       生产域名：https://neon21-casino.pages.dev/
+       本区块同时服务传统搜索引擎爬虫与生成式引擎（AI 摘要 / 引用）：
+       title、description、keywords、canonical、hreflang、Open Graph、
+       Twitter Card、Article 元数据与 robots/sitemap 入口集中声明。
+       所有绝对 URL 需与 index.html 的 JSON-LD、robots.txt、sitemap.xml 一致。
+       ============================================================ -->
+  <title>霓虹21号：赛博赌城弹球｜免费 H5 打砖块小游戏</title>
+  <meta name="description" content="霓虹21号（NEON 21）是一款赛博赌场主题的免费单文件 H5 打砖块游戏。用方向键或触屏移动挡板，击碎扑克牌砖块、收集虚拟筹码道具、打出连击高分。无需下载、无需注册、无真实货币，PC 与手机浏览器即开即玩。">
+  <meta name="keywords" content="霓虹21号,NEON 21,H5小游戏,打砖块,赛博朋克游戏,免费网页游戏,弹球游戏,HTML5 Canvas,触屏游戏,在线小游戏,单文件游戏">
+  <meta name="author" content="NEON 21 Studio">
+  <meta name="designer" content="NEON 21 Studio">
+  <meta name="publisher" content="NEON 21 Studio">
+  <meta name="abstract" content="《霓虹21号》是一款完全在浏览器本地运行的免费 HTML5 Canvas 打砖块游戏。玩家移动挡板反弹能量球击碎扑克牌砖块，以连击与道具提升分数；3 枚虚拟筹码耗尽后结算。不含真实货币赌博、充值或提现。">
+  <meta name="subject" content="免费单文件 H5 打砖块小游戏">
+  <meta name="classification" content="Games, HTML5 Canvas, Arcade, Casual, Brick Breaker">
+  <meta name="rating" content="General">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1, max-news-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://neon21-casino.pages.dev/">
+  <link rel="alternate" hreflang="zh-CN" href="https://neon21-casino.pages.dev/">
+  <link rel="alternate" hreflang="x-default" href="https://neon21-casino.pages.dev/">
+  <link rel="sitemap" type="application/xml" title="站点地图" href="https://neon21-casino.pages.dev/sitemap.xml">
+  <!-- 图标内联为 data URI，保证单独拷贝 index.html 时也不产生 404 -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='16'%20fill='%2305030f'/%3E%3Ctext%20x='32'%20y='43'%20text-anchor='middle'%20font-family='Arial%20Black,sans-serif'%20font-size='26'%20font-weight='900'%20fill='%23ffd66b'%3E21%3C/text%3E%3C/svg%3E">
+
+  <!-- Open Graph（社交分享与 AI 引用来源） -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="霓虹21号 NEON 21">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="霓虹21号：赛博赌城弹球｜免费 H5 打砖块小游戏">
+  <meta property="og:description" content="用技巧通吃霓虹牌桌：击碎扑克牌砖块、收集虚拟筹码道具、冲击连击高分。免费单文件 H5 小游戏，手机与 PC 即开即玩，无真实货币。">
+  <meta property="og:url" content="https://neon21-casino.pages.dev/">
+  <meta property="og:image" content="https://neon21-casino.pages.dev/og-cover.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="霓虹21号游戏画面：赛博赌场风格的霓虹打砖块牌桌">
+  <meta property="article:author" content="NEON 21 Studio">
+  <meta property="article:section" content="Games">
+  <meta property="article:tag" content="打砖块">
+  <meta property="article:tag" content="HTML5 Canvas">
+  <meta property="article:tag" content="赛博朋克">
+  <meta property="article:tag" content="虚拟筹码">
+  <meta property="article:published_time" content="2026-11-05T00:00:00+08:00">
+  <meta property="article:modified_time" content="2026-11-06T00:00:00+08:00">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="霓虹21号：赛博赌城弹球">
+  <meta name="twitter:description" content="免费 H5 赛博赌场打砖块：移动挡板、击碎扑克牌砖块、打出连击高分。无需下载，手机与 PC 即开即玩。">
+  <meta name="twitter:image" content="https://neon21-casino.pages.dev/og-cover.png">
+  <meta name="twitter:image:alt" content="霓虹21号赛博赌场打砖块游戏封面">
+  <meta name="twitter:label1" content="运行平台">
+  <meta name="twitter:data1" content="PC / 手机浏览器">
+  <meta name="twitter:label2" content="费用">
+  <meta name="twitter:data2" content="免费，无内购、无真实货币">
+
+  <style>
+
+    /* ============================================================
+       设计变量与基础重置
+       ============================================================ */
+    :root {
+      --bg: #05030f;
+      --bg-deep: #03020a;
+      --panel: #0b0919;
+      --panel-2: #12102a;
+      --line: rgba(168, 160, 255, 0.14);
+      --line-strong: rgba(168, 160, 255, 0.28);
+      --text: #f7f4ff;
+      --muted: #a7a1c2;
+      --muted-2: #9a94b8;
+      --cyan: #4ff5ff;
+      --pink: #ff4fa3;
+      --violet: #9a6cff;
+      --gold: #ffd66b;
+      --green: #64ffc4;
+      --danger: #ff5d7a;
+      --radius-lg: 28px;
+      --radius-md: 20px;
+      --radius-sm: 14px;
+      --font-ui: "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+      --font-display: "Arial Black", "Segoe UI Black", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      --font-mono: "Cascadia Code", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      overflow-x: hidden;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-ui);
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background:
+        radial-gradient(ellipse 70% 48% at 50% -6%, rgba(154, 108, 255, 0.24), transparent 68%),
+        radial-gradient(ellipse 46% 42% at 8% 38%, rgba(255, 79, 163, 0.10), transparent 70%),
+        radial-gradient(ellipse 54% 44% at 94% 62%, rgba(79, 245, 255, 0.08), transparent 72%),
+        linear-gradient(180deg, #070512 0%, #05030f 42%, #03020a 100%);
+      pointer-events: none;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background-image:
+        linear-gradient(rgba(160, 150, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(160, 150, 255, 0.035) 1px, transparent 1px);
+      background-size: 84px 84px;
+      -webkit-mask-image: radial-gradient(ellipse 80% 64% at 50% 18%, #000 0%, transparent 76%);
+      mask-image: radial-gradient(ellipse 80% 64% at 50% 18%, #000 0%, transparent 76%);
+      pointer-events: none;
+    }
+
+    ::selection {
+      background: rgba(255, 214, 107, 0.9);
+      color: #150d02;
+    }
+
+    a {
+      color: inherit;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+
+    button {
+      font: inherit;
+      color: inherit;
+    }
+
+    kbd {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 22px;
+      height: 22px;
+      padding: 0 6px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-bottom-color: rgba(255, 255, 255, 0.08);
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.055);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      color: #e9e5ff;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .wrap {
+      width: min(1180px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .sr-only {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 100;
+      padding: 10px 16px;
+      border-radius: 10px;
+      background: var(--gold);
+      color: #160f03;
+      font-weight: 800;
+      text-decoration: none;
+      transform: translateY(-160%);
+      transition: transform 180ms ease;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+      outline: 3px solid var(--cyan);
+      outline-offset: 2px;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--cyan);
+      outline-offset: 3px;
+    }
+
+    /* ============================================================
+       顶部导航
+       ============================================================ */
+    .site-header {
+      position: relative;
+      z-index: 20;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+      background: rgba(5, 3, 15, 0.46);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      min-height: 72px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--text);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border: 1px solid rgba(255, 214, 107, 0.55);
+      border-radius: 11px 4px 11px 4px;
+      background:
+        linear-gradient(140deg, rgba(255, 214, 107, 0.22), rgba(255, 79, 163, 0.12)),
+        #0d0a1d;
+      box-shadow: 0 0 22px rgba(255, 214, 107, 0.12);
+      color: var(--gold);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: -0.06em;
+      transform: rotate(-3deg);
+    }
+
+    .brand-name {
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 0.16em;
+      line-height: 1;
+    }
+
+    .brand-name span {
+      color: var(--gold);
+    }
+
+    .brand-sub {
+      padding-left: 11px;
+      border-left: 1px solid var(--line-strong);
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      line-height: 1.4;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+
+    .nav a {
+      position: relative;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      transition: color 160ms ease;
+    }
+
+    .nav a::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -7px;
+      left: 0;
+      height: 1px;
+      background: linear-gradient(90deg, var(--cyan), var(--pink));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 200ms var(--ease-out);
+    }
+
+    .nav a:hover {
+      color: var(--text);
+    }
+
+    .nav a:hover::after {
+      transform: scaleX(1);
+    }
+
+    /* ============================================================
+       Hero 标题区
+       ============================================================ */
+    .hero {
+      position: relative;
+      padding: clamp(42px, 7vw, 84px) 0 20px;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -220px;
+      left: 50%;
+      z-index: -1;
+      width: min(1000px, 120vw);
+      height: 720px;
+      background: radial-gradient(circle at 50% 50%, rgba(154, 108, 255, 0.19), rgba(255, 79, 163, 0.05) 42%, transparent 70%);
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+
+    .hero-head {
+      max-width: 930px;
+      margin: 0 auto 34px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0;
+      color: #c7faff;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .pulse-dot {
+      position: relative;
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 12px var(--cyan);
+    }
+
+    .pulse-dot::after {
+      content: "";
+      position: absolute;
+      inset: -4px;
+      border: 1px solid rgba(79, 245, 255, 0.55);
+      border-radius: 50%;
+      animation: dot-pulse 2.4s ease-out infinite;
+    }
+
+    @keyframes dot-pulse {
+      0% { transform: scale(0.65); opacity: 0.8; }
+      75%, 100% { transform: scale(1.8); opacity: 0; }
+    }
+
+    .hero h1 {
+      margin: 14px 0 0;
+      font-family: var(--font-display);
+      font-size: clamp(48px, 9.2vw, 108px);
+      font-weight: 900;
+      letter-spacing: -0.055em;
+      line-height: 0.94;
+      text-wrap: balance;
+    }
+
+    .h1-top {
+      display: block;
+      background: linear-gradient(180deg, #ffffff 4%, #f0eaff 34%, #a998ff 66%, #6a4cff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      filter: drop-shadow(0 10px 38px rgba(138, 92, 255, 0.20));
+    }
+
+    .h1-accent {
+      display: inline-block;
+      margin-inline: 0.025em;
+      background: linear-gradient(180deg, #fff6d8 4%, var(--gold) 52%, #ff9c38 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      filter: drop-shadow(0 0 32px rgba(255, 196, 68, 0.22));
+    }
+
+    .h1-bottom {
+      display: block;
+      margin-top: 10px;
+      color: #f4f0ff;
+      font-family: var(--font-ui);
+      font-size: clamp(20px, 3.2vw, 36px);
+      font-weight: 800;
+      letter-spacing: 0.3em;
+      line-height: 1.2;
+      text-indent: 0.3em;
+    }
+
+    .lede {
+      max-width: 670px;
+      margin: 22px auto 0;
+      color: var(--muted);
+      font-size: clamp(14px, 1.5vw, 17px);
+      line-height: 1.85;
+      text-wrap: pretty;
+    }
+
+    .lede strong {
+      color: #fff1bd;
+      font-weight: 700;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 22px;
+    }
+
+    .hero-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 30px;
+      padding: 5px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.025);
+      color: #bbb5d4;
+      font-size: 11px;
+      letter-spacing: 0.03em;
+    }
+
+    .hero-meta span::before {
+      content: "◆";
+      color: var(--cyan);
+      font-size: 6px;
+    }
+
+    /* ============================================================
+       游戏机柜与 HUD
+       ============================================================ */
+    .game-column {
+      position: relative;
+      max-width: 1050px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .cabinet {
+      position: relative;
+      isolation: isolate;
+      padding: 9px;
+      border: 1px solid rgba(171, 160, 255, 0.27);
+      border-radius: var(--radius-lg);
+      background:
+        linear-gradient(180deg, rgba(22, 17, 47, 0.98), rgba(7, 5, 18, 0.99)),
+        #080615;
+      box-shadow:
+        0 60px 120px -54px rgba(0, 0, 0, 0.98),
+        0 0 0 1px rgba(255, 255, 255, 0.035) inset,
+        0 0 90px -20px rgba(112, 65, 255, 0.34);
+    }
+
+    .cabinet::before {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      z-index: -1;
+      border-radius: calc(var(--radius-lg) + 2px);
+      background: linear-gradient(125deg, rgba(79, 245, 255, 0.58), transparent 27%, transparent 68%, rgba(255, 79, 163, 0.52));
+      filter: blur(20px);
+      opacity: 0.30;
+      pointer-events: none;
+    }
+
+    .cabinet::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 20%;
+      left: 20%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.75), transparent);
+      pointer-events: none;
+    }
+
+    .cabinet-rail {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 3px 14px 6px;
+    }
+
+    .rail-label {
+      color: rgba(208, 200, 255, 0.48);
+      font-family: var(--font-mono);
+      font-size: 8px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .rail-lights {
+      display: flex;
+      gap: 7px;
+    }
+
+    .rail-lights i {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 9px rgba(255, 214, 107, 0.8);
+      opacity: 0.6;
+      animation: bulb 3.2s ease-in-out infinite;
+    }
+
+    .rail-lights i:nth-child(2n) {
+      background: var(--cyan);
+      box-shadow: 0 0 9px rgba(79, 245, 255, 0.8);
+      animation-delay: -1.1s;
+    }
+
+    .rail-lights i:nth-child(3n) {
+      background: var(--pink);
+      box-shadow: 0 0 9px rgba(255, 79, 163, 0.8);
+      animation-delay: -2.2s;
+    }
+
+    @keyframes bulb {
+      0%, 100% { opacity: 0.34; }
+      50% { opacity: 1; }
+    }
+
+    .hud {
+      display: grid;
+      grid-template-columns: 1.45fr 1.08fr 0.78fr 0.94fr 0.82fr auto;
+      grid-template-areas: "score best level combo lives actions";
+      align-items: stretch;
+      margin: 0 0 8px;
+      padding: 0 5px;
+      border-block: 1px solid rgba(255, 255, 255, 0.065);
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.018), transparent 70%);
+    }
+
+    .hud-item {
+      min-width: 0;
+      padding: 9px clamp(7px, 1.4vw, 15px) 10px;
+    }
+
+    .hud-item + .hud-item {
+      border-left: 1px solid rgba(255, 255, 255, 0.055);
+    }
+
+    .hud-score { grid-area: score; }
+    .hud-best { grid-area: best; }
+    .hud-level { grid-area: level; }
+    .hud-combo { grid-area: combo; }
+    .hud-lives { grid-area: lives; }
+
+    .hud-label {
+      display: block;
+      overflow: hidden;
+      color: var(--muted-2);
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      line-height: 1.4;
+      text-overflow: ellipsis;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .hud-label i {
+      color: rgba(167, 161, 194, 0.46);
+      font-family: var(--font-mono);
+      font-size: 7px;
+      font-style: normal;
+      letter-spacing: 0.12em;
+    }
+
+    .hud-value {
+      display: block;
+      overflow: hidden;
+      margin-top: 1px;
+      color: var(--text);
+      font-family: var(--font-mono);
+      font-size: clamp(15px, 1.8vw, 21px);
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      line-height: 1.3;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .hud-score .hud-value {
+      color: var(--gold);
+      text-shadow: 0 0 18px rgba(255, 214, 107, 0.24);
+    }
+
+    .hud-best .hud-value {
+      color: #d9d1ff;
+    }
+
+    .hud-combo .hud-value {
+      color: var(--cyan);
+    }
+
+    .hud-lives .hud-value {
+      color: var(--pink);
+      font-size: clamp(10px, 1.35vw, 15px);
+      letter-spacing: 0.18em;
+      line-height: 1.75;
+      text-shadow: 0 0 12px rgba(255, 79, 163, 0.22);
+    }
+
+    .hud-actions {
+      grid-area: actions;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 6px;
+      padding: 6px 4px 6px 10px;
+    }
+
+    .icon-button {
+      display: inline-grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      padding: 0;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.035);
+      color: #cfc9e8;
+      font-family: var(--font-mono);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1;
+      cursor: pointer;
+      transition: border-color 160ms ease, background 160ms ease, color 160ms ease, transform 160ms ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .icon-button:hover:not(:disabled) {
+      border-color: rgba(79, 245, 255, 0.45);
+      background: rgba(79, 245, 255, 0.10);
+      color: var(--cyan);
+    }
+
+    .icon-button:active:not(:disabled) {
+      transform: scale(0.94);
+    }
+
+    .icon-button:disabled {
+      cursor: not-allowed;
+      opacity: 0.32;
+    }
+
+    .icon-button[aria-pressed="false"] {
+      color: var(--muted-2);
+    }
+
+    /* ============================================================
+       Canvas 游戏区域
+       ============================================================ */
+    .stage {
+      position: relative;
+      isolation: isolate;
+      aspect-ratio: 16 / 10;
+      margin: 0 5px;
+      overflow: hidden;
+      border: 1px solid rgba(164, 151, 255, 0.22);
+      border-radius: 19px;
+      background: #04020d;
+      box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.018),
+        inset 0 0 90px rgba(5, 2, 16, 0.88);
+      /* 画布自己禁用触摸手势；舞台保留 pan-y，让开始/结算卡片在矮屏上可滚动 */
+      touch-action: manipulation;
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    #gameCanvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      cursor: crosshair;
+      outline: none;
+      touch-action: none;
+    }
+
+    #gameCanvas:focus-visible {
+      outline: 2px solid var(--cyan);
+      outline-offset: -4px;
+    }
+
+    .stage-scanlines,
+    .stage-vignette {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .stage-scanlines {
+      background: repeating-linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.028) 0,
+        rgba(255, 255, 255, 0.028) 1px,
+        transparent 1px,
+        transparent 4px
+      );
+      mix-blend-mode: overlay;
+      opacity: 0.62;
+    }
+
+    .stage-vignette {
+      background:
+        radial-gradient(ellipse 70% 66% at 50% 48%, transparent 48%, rgba(0, 0, 0, 0.45) 100%),
+        linear-gradient(180deg, rgba(2, 1, 8, 0.22), transparent 15%, transparent 82%, rgba(2, 1, 8, 0.55));
+      box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.45);
+    }
+
+    .buff-bar {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 4;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      max-width: calc(100% - 24px);
+      pointer-events: none;
+    }
+
+    .buff {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      min-height: 25px;
+      padding: 3px 9px;
+      border: 1px solid rgba(79, 245, 255, 0.36);
+      border-radius: 999px;
+      background: rgba(5, 8, 19, 0.78);
+      box-shadow: 0 0 18px rgba(79, 245, 255, 0.1);
+      color: #c7fbff;
+      font-family: var(--font-mono);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      backdrop-filter: blur(6px);
+    }
+
+    .buff i {
+      color: var(--muted);
+      font-style: normal;
+      font-size: 8px;
+    }
+
+    .buff.gold {
+      border-color: rgba(255, 214, 107, 0.42);
+      color: var(--gold);
+    }
+
+    .buff.pink {
+      border-color: rgba(255, 79, 163, 0.42);
+      color: #ffc3dd;
+    }
+
+    /* ============================================================
+       覆盖层：开始 / 暂停 / 结算
+       ============================================================ */
+    .overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(12px, 3vw, 28px);
+      background:
+        radial-gradient(circle at 50% 30%, rgba(19, 14, 48, 0.56), rgba(2, 1, 9, 0.90) 72%);
+      backdrop-filter: blur(8px) saturate(112%);
+      -webkit-backdrop-filter: blur(8px) saturate(112%);
+      animation: overlay-in 340ms var(--ease-out) both;
+      touch-action: pan-y;
+      overscroll-behavior: contain;
+    }
+
+    .overlay[hidden] {
+      display: none !important;
+    }
+
+    @keyframes overlay-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .overlay-card {
+      position: relative;
+      width: min(430px, 100%);
+      max-height: 100%;
+      overflow: auto;
+      padding: clamp(22px, 4.2vw, 36px);
+      border: 1px solid rgba(197, 187, 255, 0.22);
+      border-radius: 24px;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(154, 108, 255, 0.16), transparent 52%),
+        linear-gradient(155deg, rgba(23, 18, 49, 0.98), rgba(7, 5, 18, 0.99));
+      box-shadow:
+        0 30px 80px -30px rgba(0, 0, 0, 0.94),
+        inset 0 1px 0 rgba(255, 255, 255, 0.075);
+      text-align: center;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(154, 108, 255, 0.35) transparent;
+      animation: card-in 500ms var(--ease-out) both;
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .overlay-card::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .overlay-card::-webkit-scrollbar-thumb {
+      border-radius: 999px;
+      background: rgba(154, 108, 255, 0.35);
+    }
+
+    .overlay-card::before,
+    .overlay-card::after {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-color: rgba(255, 214, 107, 0.55);
+      border-style: solid;
+      pointer-events: none;
+    }
+
+    .overlay-card::before {
+      top: 9px;
+      left: 9px;
+      border-width: 1px 0 0 1px;
+      border-radius: 8px 0 0;
+    }
+
+    .overlay-card::after {
+      right: 9px;
+      bottom: 9px;
+      border-width: 0 1px 1px 0;
+      border-radius: 0 0 8px;
+    }
+
+    @keyframes card-in {
+      from { opacity: 0; transform: translateY(14px) scale(0.975); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .overlay-kicker {
+      margin: 0 0 7px;
+      color: var(--gold);
+      font-family: var(--font-mono);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    .overlay-card h2 {
+      margin: 0;
+      color: #fff;
+      font-family: var(--font-ui);
+      font-size: clamp(23px, 3vw, 31px);
+      font-weight: 850;
+      letter-spacing: -0.025em;
+      line-height: 1.28;
+      text-wrap: balance;
+    }
+
+    .overlay-copy {
+      margin: 12px auto 0;
+      max-width: 360px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.75;
+      text-wrap: pretty;
+    }
+
+    .suit-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      margin: 0 0 16px;
+      color: rgba(255, 255, 255, 0.45);
+      font-size: 12px;
+      letter-spacing: 0.35em;
+      text-indent: 0.35em;
+    }
+
+    .suit-divider span:nth-child(2) {
+      color: var(--pink);
+    }
+
+    .suit-divider span:nth-child(4) {
+      color: var(--gold);
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin: 18px 0 20px;
+    }
+
+    .tag-row span {
+      padding: 4px 9px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.028);
+      color: #b8b1d3;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      width: 100%;
+      min-height: 48px;
+      padding: 12px 20px;
+      border: 1px solid transparent;
+      border-radius: 13px;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      line-height: 1.2;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 160ms var(--ease-out), box-shadow 160ms ease, border-color 160ms ease, background 160ms ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn-primary {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(105deg, #ffe59a 0%, #ffd25f 42%, #ffad38 100%);
+      box-shadow:
+        0 12px 34px -14px rgba(255, 187, 67, 0.8),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+      color: #1b1002;
+    }
+
+    .btn-primary::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -45%;
+      width: 34%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+      transform: skewX(-18deg);
+      animation: btn-sheen 4.8s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes btn-sheen {
+      0%, 55% { left: -45%; }
+      78%, 100% { left: 125%; }
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow:
+        0 16px 38px -14px rgba(255, 187, 67, 0.9),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    .btn-primary:active {
+      transform: translateY(1px) scale(0.995);
+    }
+
+    .btn-secondary {
+      border-color: rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.045);
+      color: #eae6ff;
+    }
+
+    .btn-secondary:hover {
+      border-color: rgba(79, 245, 255, 0.35);
+      background: rgba(79, 245, 255, 0.075);
+    }
+
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      margin-top: 4px;
+      padding: 5px 10px;
+      border: 0;
+      background: none;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      cursor: pointer;
+    }
+
+    .text-link:hover {
+      color: var(--cyan);
+    }
+
+    .overlay-fineprint {
+      margin: 10px 0 0;
+      color: var(--muted-2);
+      font-size: 9px;
+      letter-spacing: 0.04em;
+    }
+
+    .overlay-actions {
+      display: grid;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .overlay-actions .btn {
+      font-size: 13px;
+    }
+
+    .final-score {
+      margin: 18px 0 0;
+      padding: 15px 18px;
+      border: 1px solid rgba(255, 214, 107, 0.22);
+      border-radius: 15px;
+      background: radial-gradient(circle at 50% 0%, rgba(255, 214, 107, 0.12), transparent 66%);
+    }
+
+    .final-score span {
+      display: block;
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .final-score strong {
+      display: block;
+      margin-top: 2px;
+      color: var(--gold);
+      font-family: var(--font-mono);
+      font-size: clamp(32px, 6vw, 44px);
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      line-height: 1.2;
+      text-shadow: 0 0 28px rgba(255, 214, 107, 0.22);
+    }
+
+    .result-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      margin: 12px 0 0;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .result-grid div {
+      padding: 10px 6px;
+      background: rgba(8, 6, 20, 0.94);
+    }
+
+    .result-grid span {
+      display: block;
+      color: var(--muted-2);
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .result-grid strong {
+      display: block;
+      margin-top: 2px;
+      color: #eeeaff;
+      font-family: var(--font-mono);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .record-line {
+      margin: 12px 0 0;
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .record-line[hidden] {
+      display: none;
+    }
+
+    .overlay-stats {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .overlay-stats strong {
+      color: #f3efff;
+      font-family: var(--font-mono);
+    }
+
+    /* 提示条 */
+    .stage-toast {
+      position: absolute;
+      top: 14px;
+      left: 50%;
+      z-index: 8;
+      max-width: calc(100% - 28px);
+      padding: 7px 13px;
+      border: 1px solid rgba(79, 245, 255, 0.30);
+      border-radius: 999px;
+      background: rgba(6, 5, 17, 0.86);
+      box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.85);
+      color: #dbfcff;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      line-height: 1.4;
+      text-align: center;
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(-50%, -9px);
+      transition: opacity 220ms ease, transform 220ms var(--ease-out);
+      backdrop-filter: blur(8px);
+    }
+
+    .stage-toast.show {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    /* 机柜底部操作提示 */
+    .cabinet-foot {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px 20px;
+      padding: 9px 16px 7px;
+      color: var(--muted-2);
+      font-size: 9px;
+      line-height: 1.6;
+    }
+
+    .key-hints,
+    .touch-hints {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .key-hints span,
+    .touch-hints span {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+    }
+
+    .touch-hints {
+      display: none;
+      color: var(--muted);
+    }
+
+    .virtual-note {
+      margin-left: auto;
+      color: rgba(167, 161, 194, 0.56);
+      white-space: nowrap;
+    }
+
+    /* ============================================================
+       跑马灯装饰
+       ============================================================ */
+    .marquee {
+      position: relative;
+      margin-top: clamp(28px, 5vw, 48px);
+      overflow: hidden;
+      border-block: 1px solid rgba(255, 255, 255, 0.065);
+      background: rgba(255, 255, 255, 0.018);
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+      mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee-move 34s linear infinite;
+      will-change: transform;
+    }
+
+    .marquee-track span {
+      display: inline-flex;
+      align-items: center;
+      gap: 18px;
+      padding: 11px 20px;
+      color: rgba(199, 191, 230, 0.72);
+      font-family: var(--font-mono);
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.24em;
+      line-height: 1;
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+
+    .marquee-track em {
+      color: var(--gold);
+      font-style: normal;
+    }
+
+    @keyframes marquee-move {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* ============================================================
+       内容区通用样式
+       ============================================================ */
+    .section {
+      position: relative;
+      padding: clamp(56px, 8vw, 96px) 0;
+    }
+
+    .section + .section {
+      border-top: 1px solid rgba(255, 255, 255, 0.055);
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: clamp(26px, 4vw, 38px);
+    }
+
+    .kicker {
+      margin: 0 0 9px;
+      color: var(--cyan);
+      font-family: var(--font-mono);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      color: var(--text);
+      font-size: clamp(30px, 4.2vw, 48px);
+      font-weight: 850;
+      letter-spacing: -0.035em;
+      line-height: 1.14;
+      text-wrap: balance;
+    }
+
+    .section-head > p:last-child {
+      max-width: 660px;
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.85;
+      text-wrap: pretty;
+    }
+
+    .text-gold { color: var(--gold); }
+    .text-cyan { color: var(--cyan); }
+    .text-pink { color: var(--pink); }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .guide-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 224px;
+      padding: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.085);
+      border-radius: var(--radius-md);
+      background:
+        linear-gradient(155deg, rgba(255, 255, 255, 0.045), transparent 46%),
+        rgba(11, 9, 25, 0.64);
+      transition: transform 220ms var(--ease-out), border-color 220ms ease, background 220ms ease;
+    }
+
+    .guide-card::after {
+      content: "";
+      position: absolute;
+      right: -36px;
+      bottom: -52px;
+      width: 130px;
+      height: 130px;
+      border: 1px solid rgba(154, 108, 255, 0.16);
+      border-radius: 50%;
+      box-shadow: 0 0 70px rgba(154, 108, 255, 0.10) inset;
+      pointer-events: none;
+    }
+
+    .guide-card:hover {
+      border-color: rgba(154, 150, 255, 0.25);
+      background:
+        linear-gradient(155deg, rgba(79, 245, 255, 0.055), transparent 46%),
+        rgba(13, 10, 30, 0.82);
+      transform: translateY(-3px);
+    }
+
+    .card-num {
+      display: inline-block;
+      color: var(--cyan);
+      font-family: var(--font-mono);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+    }
+
+    .guide-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      margin: 20px 0 16px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.035);
+      color: #f3efff;
+      font-family: var(--font-mono);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .guide-card:nth-child(2) .guide-icon {
+      border-color: rgba(255, 79, 163, 0.24);
+      color: var(--pink);
+    }
+
+    .guide-card:nth-child(3) .guide-icon {
+      border-color: rgba(255, 214, 107, 0.24);
+      color: var(--gold);
+    }
+
+    .guide-card h3 {
+      margin: 0 0 7px;
+      color: #f7f4ff;
+      font-size: 17px;
+      font-weight: 750;
+      letter-spacing: -0.01em;
+    }
+
+    .guide-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.8;
+    }
+
+    .rule-callout {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 14px;
+      padding: 20px 22px;
+      border: 1px solid rgba(255, 214, 107, 0.20);
+      border-radius: var(--radius-md);
+      background:
+        radial-gradient(circle at 0% 50%, rgba(255, 214, 107, 0.08), transparent 36%),
+        rgba(12, 9, 24, 0.62);
+    }
+
+    .callout-badge {
+      display: grid;
+      flex: 0 0 58px;
+      place-items: center;
+      width: 58px;
+      height: 58px;
+      border: 1px solid rgba(255, 214, 107, 0.36);
+      border-radius: 50%;
+      background: rgba(255, 214, 107, 0.06);
+      color: var(--gold);
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      transform: rotate(-5deg);
+    }
+
+    .rule-callout h3 {
+      margin: 0 0 3px;
+      color: #fff6dc;
+      font-size: 14px;
+      font-weight: 750;
+    }
+
+    .rule-callout p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.75;
+    }
+
+    /* ============================================================
+       计分与道具
+       ============================================================ */
+    .score-layout {
+      display: grid;
+      grid-template-columns: 1.18fr 0.82fr;
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    .score-panel,
+    .power-panel {
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.085);
+      border-radius: var(--radius-md);
+      background: rgba(10, 8, 23, 0.65);
+    }
+
+    .score-panel h3,
+    .power-panel h3 {
+      margin: 0;
+      color: #f9f6ff;
+      font-size: 15px;
+      font-weight: 750;
+    }
+
+    .panel-sub {
+      margin: 4px 0 16px;
+      color: var(--muted-2);
+      font-size: 10px;
+      line-height: 1.7;
+    }
+
+    .score-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      text-align: left;
+    }
+
+    .score-table th {
+      padding: 0 8px 9px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--muted-2);
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .score-table td {
+      padding: 10px 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+      color: var(--muted);
+      line-height: 1.6;
+      vertical-align: top;
+    }
+
+    .score-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .score-table td:first-child {
+      color: #eae5ff;
+      font-weight: 650;
+      white-space: nowrap;
+    }
+
+    .score-table td:last-child {
+      color: var(--gold);
+      font-family: var(--font-mono);
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .power-list {
+      display: grid;
+      gap: 11px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .power-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .power-chip {
+      display: grid;
+      flex: 0 0 32px;
+      place-items: center;
+      width: 32px;
+      height: 32px;
+      border: 1px solid rgba(79, 245, 255, 0.25);
+      border-radius: 50%;
+      background: rgba(79, 245, 255, 0.055);
+      color: var(--cyan);
+      font-family: var(--font-mono);
+      font-size: 9px;
+      font-weight: 800;
+      line-height: 1;
+      box-shadow: inset 0 0 0 3px rgba(4, 3, 12, 0.65);
+    }
+
+    .power-list li:nth-child(2) .power-chip {
+      border-color: rgba(154, 108, 255, 0.32);
+      background: rgba(154, 108, 255, 0.07);
+      color: #c5b3ff;
+    }
+
+    .power-list li:nth-child(3) .power-chip {
+      border-color: rgba(255, 79, 163, 0.32);
+      background: rgba(255, 79, 163, 0.07);
+      color: #ffb4d5;
+    }
+
+    .power-list li:nth-child(4) .power-chip {
+      border-color: rgba(255, 214, 107, 0.32);
+      background: rgba(255, 214, 107, 0.07);
+      color: var(--gold);
+    }
+
+    .power-list li:nth-child(5) .power-chip {
+      border-color: rgba(100, 255, 196, 0.32);
+      background: rgba(100, 255, 196, 0.07);
+      color: var(--green);
+    }
+
+    .power-list strong {
+      display: block;
+      color: #ece7ff;
+      font-size: 12px;
+      font-weight: 650;
+      line-height: 1.6;
+    }
+
+    .power-list span {
+      display: block;
+      color: var(--muted-2);
+      font-size: 10px;
+      line-height: 1.65;
+    }
+
+    /* ============================================================
+       FAQ、CTA、页脚
+       ============================================================ */
+    .faq-layout {
+      display: grid;
+      grid-template-columns: 0.62fr 1.38fr;
+      gap: clamp(28px, 5vw, 70px);
+      align-items: start;
+    }
+
+    .faq-intro {
+      position: sticky;
+      top: 24px;
+    }
+
+    .faq-intro .section-head {
+      margin-bottom: 18px;
+    }
+
+    .faq-intro p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .quick-facts {
+      display: grid;
+      gap: 1px;
+      margin-top: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.075);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.055);
+    }
+
+    .quick-facts div {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 9px 12px;
+      background: rgba(8, 6, 19, 0.94);
+      font-size: 10px;
+    }
+
+    .quick-facts span {
+      color: var(--muted-2);
+    }
+
+    .quick-facts strong {
+      color: #ded8f5;
+      font-weight: 600;
+      text-align: right;
+    }
+
+    /* GEO 可引用摘要：纯静态文本、语义化定义列表，便于爬虫与 AI 抽取 */
+    .geo-lead {
+      max-width: 760px;
+      margin: 0 0 18px;
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.9;
+      text-wrap: pretty;
+    }
+
+    .geo-facts {
+      display: grid;
+      gap: 1px;
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.075);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.055);
+    }
+
+    .geo-facts > div {
+      display: grid;
+      grid-template-columns: minmax(96px, 168px) 1fr;
+      gap: 16px;
+      padding: 11px 14px;
+      background: rgba(8, 6, 19, 0.94);
+    }
+
+    .geo-facts dt {
+      color: var(--muted-2);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .geo-facts dd {
+      margin: 0;
+      color: #ded8f5;
+      font-size: 12px;
+      line-height: 1.75;
+    }
+
+    .geo-cite {
+      max-width: 760px;
+      margin: 16px 0 0;
+      color: var(--muted-2);
+      font-family: var(--font-mono);
+      font-size: 10px;
+      line-height: 1.8;
+      overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 560px) {
+      .geo-facts > div {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+    }
+
+    .faq-list {
+      border-top: 1px solid rgba(255, 255, 255, 0.075);
+    }
+
+    .faq-list details {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+    }
+
+    .faq-list summary {
+      position: relative;
+      padding: 19px 42px 19px 0;
+      color: #f1edff;
+      font-size: 14px;
+      font-weight: 650;
+      line-height: 1.6;
+      list-style: none;
+      cursor: pointer;
+      transition: color 160ms ease;
+    }
+
+    .faq-list summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-list summary::after {
+      content: "+";
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      color: var(--muted);
+      font-family: var(--font-mono);
+      font-size: 18px;
+      font-weight: 400;
+      transform: translateY(-50%);
+      transition: color 160ms ease, transform 200ms ease;
+    }
+
+    .faq-list details[open] summary {
+      color: #fff;
+    }
+
+    .faq-list details[open] summary::after {
+      content: "−";
+      color: var(--gold);
+    }
+
+    .faq-list summary:hover {
+      color: var(--cyan);
+    }
+
+    .faq-list p {
+      max-width: 720px;
+      margin: 0;
+      padding: 0 42px 20px 0;
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.85;
+    }
+
+    .cta-section {
+      padding: clamp(20px, 4vw, 42px) 0 clamp(58px, 8vw, 92px);
+    }
+
+    .cta-card {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: clamp(22px, 5vw, 62px);
+      padding: clamp(26px, 5vw, 46px);
+      border: 1px solid rgba(255, 214, 107, 0.20);
+      border-radius: var(--radius-lg);
+      background:
+        radial-gradient(circle at 88% 20%, rgba(255, 214, 107, 0.12), transparent 38%),
+        radial-gradient(circle at 12% 90%, rgba(154, 108, 255, 0.16), transparent 46%),
+        linear-gradient(115deg, rgba(24, 19, 50, 0.92), rgba(8, 6, 19, 0.96));
+      box-shadow: 0 30px 80px -44px rgba(0, 0, 0, 0.9);
+    }
+
+    .cta-card::after {
+      content: "21";
+      position: absolute;
+      right: 9%;
+      bottom: -0.33em;
+      z-index: 0;
+      color: rgba(255, 255, 255, 0.035);
+      font-family: var(--font-display);
+      font-size: 230px;
+      font-weight: 900;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .cta-copy {
+      position: relative;
+      z-index: 1;
+      max-width: 620px;
+    }
+
+    .cta-copy h2 {
+      margin: 0;
+      font-size: clamp(26px, 3.5vw, 40px);
+      font-weight: 850;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    .cta-copy p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .cta-actions {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      gap: 8px;
+      width: min(210px, 100%);
+    }
+
+    .cta-actions .btn {
+      min-height: 45px;
+      font-size: 12px;
+    }
+
+    .site-footer {
+      padding: 26px 0 calc(26px + env(safe-area-inset-bottom));
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(3, 2, 10, 0.6);
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #d9d3ed;
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+    }
+
+    .footer-brand span {
+      color: var(--gold);
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .footer-links a {
+      color: var(--muted-2);
+      font-size: 10px;
+      text-decoration: none;
+      transition: color 160ms ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--cyan);
+    }
+
+    .footer-legal {
+      max-width: 820px;
+      margin: 16px 0 0;
+      color: rgba(151, 144, 180, 0.64);
+      font-size: 9px;
+      line-height: 1.8;
+    }
+
+    .footer-legal strong {
+      color: rgba(218, 211, 239, 0.8);
+      font-weight: 600;
+    }
+
+    /* ============================================================
+       响应式：平板与手机
+       ============================================================ */
+    @media (max-width: 960px) {
+      .score-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .faq-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .faq-intro {
+        position: static;
+      }
+
+      .faq-intro .section-head {
+        margin-bottom: 12px;
+      }
+
+      .quick-facts {
+        max-width: 440px;
+      }
+
+      .cta-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .cta-actions {
+        width: 100%;
+        max-width: 360px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .wrap {
+        width: calc(100% - 28px);
+      }
+
+      .header-inner {
+        min-height: 62px;
+        gap: 14px;
+      }
+
+      .brand-sub {
+        display: none;
+      }
+
+      .nav {
+        gap: 16px;
+      }
+
+      .nav a {
+        font-size: 11px;
+      }
+
+      .nav a:first-child {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 34px;
+      }
+
+      .hero-head {
+        margin-bottom: 24px;
+      }
+
+      .eyebrow {
+        font-size: 9px;
+        letter-spacing: 0.14em;
+      }
+
+      .h1-bottom {
+        letter-spacing: 0.2em;
+        text-indent: 0.2em;
+      }
+
+      .lede {
+        max-width: 540px;
+        font-size: 13px;
+      }
+
+      .hero-meta {
+        gap: 6px;
+        margin-top: 16px;
+      }
+
+      .hero-meta span {
+        min-height: 26px;
+        padding: 3px 9px;
+        font-size: 9px;
+      }
+
+      .cabinet {
+        padding: 6px;
+        border-radius: 22px;
+      }
+
+      .cabinet-rail {
+        padding: 2px 9px 5px;
+      }
+
+      .rail-lights i:nth-child(n + 8) {
+        display: none;
+      }
+
+      .hud {
+        grid-template-columns: 1.32fr 1fr 0.72fr auto;
+        grid-template-areas:
+          "score best level actions"
+          "combo combo lives actions";
+        margin-bottom: 6px;
+        padding: 0;
+      }
+
+      .hud-item {
+        padding: 7px 9px 8px;
+      }
+
+      .hud-actions {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        padding: 5px 4px 5px 7px;
+      }
+
+      .icon-button {
+        width: 32px;
+        height: 30px;
+        border-radius: 8px;
+        font-size: 12px;
+      }
+
+      .hud-label {
+        font-size: 7px;
+        letter-spacing: 0.09em;
+      }
+
+      .hud-label i {
+        display: none;
+      }
+
+      .hud-value {
+        font-size: 15px;
+      }
+
+      .hud-lives .hud-value {
+        font-size: 10px;
+      }
+
+      .stage {
+        aspect-ratio: 3 / 4;
+        margin: 0 2px;
+        border-radius: 15px;
+      }
+
+      .overlay {
+        padding: 13px;
+      }
+
+      .overlay-card {
+        width: min(390px, 100%);
+        padding: 20px 18px;
+        border-radius: 18px;
+      }
+
+      .overlay-card::before,
+      .overlay-card::after {
+        width: 12px;
+        height: 12px;
+      }
+
+      .overlay-card h2 {
+        font-size: 22px;
+      }
+
+      .overlay-copy {
+        margin-top: 9px;
+        font-size: 12px;
+        line-height: 1.65;
+      }
+
+      .tag-row {
+        margin: 13px 0 15px;
+      }
+
+      .tag-row span {
+        font-size: 8px;
+      }
+
+      .btn {
+        min-height: 46px;
+      }
+
+      .overlay-fineprint {
+        margin-top: 8px;
+      }
+
+      .final-score {
+        margin-top: 13px;
+        padding: 10px 14px;
+      }
+
+      .final-score strong {
+        font-size: 32px;
+      }
+
+      .result-grid strong {
+        font-size: 14px;
+      }
+
+      .buff-bar {
+        top: 8px;
+        left: 8px;
+        gap: 4px;
+      }
+
+      .buff {
+        min-height: 21px;
+        padding: 2px 7px;
+        font-size: 8px;
+      }
+
+      .stage-toast {
+        top: 38px;
+        font-size: 9px;
+      }
+
+      .cabinet-foot {
+        padding: 8px 8px 6px;
+        font-size: 8px;
+      }
+
+      .key-hints {
+        display: none;
+      }
+
+      .touch-hints {
+        display: flex;
+      }
+
+      .virtual-note {
+        display: none;
+      }
+
+      .guide-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .guide-card {
+        min-height: 0;
+        padding: 19px;
+      }
+
+      .guide-icon {
+        margin: 14px 0 12px;
+      }
+
+      .rule-callout {
+        align-items: flex-start;
+        padding: 17px;
+      }
+
+      .callout-badge {
+        flex-basis: 44px;
+        width: 44px;
+        height: 44px;
+        font-size: 13px;
+      }
+
+      .score-panel,
+      .power-panel {
+        padding: 18px;
+      }
+
+      .score-table {
+        font-size: 11px;
+      }
+
+      .score-table th,
+      .score-table td {
+        padding-inline: 4px;
+      }
+
+      .footer-top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .touch-hints {
+        display: none !important;
+      }
+    }
+
+    @media (hover: none), (pointer: coarse) {
+      .key-hints {
+        display: none;
+      }
+
+      .touch-hints {
+        display: flex;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .nav {
+        gap: 12px;
+      }
+
+      .brand-mark {
+        width: 30px;
+        height: 30px;
+      }
+
+      .brand-name {
+        font-size: 12px;
+      }
+
+      .hud-value {
+        font-size: 13px;
+      }
+
+      .hud-score .hud-value {
+        font-size: 15px;
+      }
+
+      .hud-item {
+        padding-inline: 7px;
+      }
+
+      .stage {
+        aspect-ratio: 20 / 27;
+      }
+
+      .overlay {
+        align-items: flex-start;
+        padding-top: 9px;
+        padding-bottom: 9px;
+      }
+
+      .overlay-card {
+        max-height: 100%;
+      }
+
+      .suit-divider {
+        margin-bottom: 11px;
+      }
+
+      .overlay-actions {
+        margin-top: 15px;
+      }
+
+      .score-table td:first-child {
+        white-space: normal;
+      }
+    }
+
+    /* 320–380px 窄屏：压缩开始/结算卡片，避免“返回开始界面”被挤出可视区 */
+    @media (max-width: 380px) {
+      .overlay {
+        padding: 6px;
+      }
+
+      .overlay-card {
+        padding: 14px 13px;
+        border-radius: 16px;
+      }
+
+      .overlay-card::before,
+      .overlay-card::after {
+        width: 11px;
+        height: 11px;
+      }
+
+      .suit-divider {
+        margin-bottom: 8px;
+        font-size: 10px;
+      }
+
+      .overlay-kicker {
+        margin-bottom: 4px;
+        font-size: 8px;
+      }
+
+      .overlay-card h2 {
+        font-size: 19px;
+      }
+
+      .overlay-copy {
+        margin-top: 7px;
+        font-size: 11px;
+        line-height: 1.55;
+      }
+
+      .tag-row {
+        margin: 9px 0 11px;
+        gap: 4px;
+      }
+
+      .tag-row span {
+        padding: 3px 6px;
+        font-size: 7px;
+      }
+
+      .btn {
+        min-height: 40px;
+        padding: 9px 14px;
+        font-size: 12px;
+      }
+
+      .overlay-actions {
+        gap: 6px;
+        margin-top: 11px;
+      }
+
+      .overlay-fineprint {
+        margin-top: 6px;
+        font-size: 8px;
+      }
+
+      .final-score {
+        margin-top: 9px;
+        padding: 8px 12px;
+      }
+
+      .final-score strong {
+        font-size: 27px;
+      }
+
+      .result-grid {
+        margin-top: 8px;
+      }
+
+      .result-grid div {
+        padding: 7px 4px;
+      }
+
+      .result-grid span {
+        font-size: 7px;
+      }
+
+      .result-grid strong {
+        font-size: 13px;
+      }
+
+      .overlay-stats {
+        margin-top: 9px;
+        gap: 10px;
+        font-size: 10px;
+      }
+    }
+
+    /* 手机横屏：限制舞台高度，避免 HUD 与挡板被挤出同一屏 */
+    @media (orientation: landscape) and (max-height: 520px) and (pointer: coarse) {
+      .hero {
+        padding-top: 18px;
+      }
+
+      .hero-head {
+        margin-bottom: 14px;
+      }
+
+      .stage {
+        aspect-ratio: auto;
+        height: clamp(200px, calc(100vh - 165px), 340px);
+        height: clamp(200px, calc(100svh - 165px), 340px);
+      }
+
+      .overlay {
+        align-items: flex-start;
+        padding: 7px;
+      }
+
+      .overlay-card {
+        max-height: 100%;
+        padding: 14px 18px;
+      }
+
+      .overlay-copy {
+        margin-top: 7px;
+        font-size: 11px;
+        line-height: 1.55;
+      }
+
+      .tag-row {
+        margin: 9px 0 11px;
+      }
+
+      .overlay-actions {
+        margin-top: 11px;
+      }
+
+      .suit-divider {
+        margin-bottom: 8px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    @media print {
+      body::before,
+      body::after,
+      .stage,
+      .site-header,
+      .marquee,
+      .cta-section {
+        display: none !important;
+      }
+
+      body {
+        background: #fff;
+        color: #111;
+      }
+    }
+  </style>
+
+
+  <!-- 结构化数据：便于搜索引擎与生成式引擎理解页面主题和玩法 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://neon21-casino.pages.dev/#website",
+        "url": "https://neon21-casino.pages.dev/",
+        "name": "霓虹21号 NEON 21",
+        "description": "赛博赌场主题的免费 H5 打砖块小游戏。",
+        "inLanguage": "zh-CN"
+      },
+      {
+        "@type": "VideoGame",
+        "@id": "https://neon21-casino.pages.dev/#game",
+        "name": "霓虹21号：赛博赌城弹球",
+        "url": "https://neon21-casino.pages.dev/",
+        "description": "一款可在浏览器直接游玩的赛博赌场风打砖块小游戏。控制霓虹挡板反弹能量球，击碎扑克牌砖块，收集筹码道具，冲击连击高分。",
+        "image": "https://neon21-casino.pages.dev/og-cover.png",
+        "genre": ["Arcade", "Brick Breaker", "Casual"],
+        "gamePlatform": ["Web browser", "Mobile browser", "PC"],
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript and HTML5 Canvas.",
+        "inLanguage": "zh-CN",
+        "isAccessibleForFree": true,
+        "playMode": "SinglePlayer",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "CNY",
+          "availability": "https://schema.org/InStock"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "NEON 21 Studio"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://neon21-casino.pages.dev/#howto",
+        "name": "如何游玩霓虹21号",
+        "description": "用挡板反弹能量球，清空全部扑克牌砖块并守住虚拟筹码。",
+        "inLanguage": "zh-CN",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "移动挡板",
+            "text": "使用键盘左右方向键或 A / D 移动挡板；手机端在游戏区域拖动即可移动。"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "发球并击碎牌面",
+            "text": "按空格键或轻点游戏区域发球，反弹能量球击碎扑克牌砖块。"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "收集道具冲击高分",
+            "text": "接住掉落的筹码道具获得双倍、加宽、多球、护盾或额外生命，保持连击并清空牌面。"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://neon21-casino.pages.dev/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "霓虹21号需要下载或注册吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不需要。霓虹21号是单文件静态 H5 游戏，打开网页即可游玩，没有账号、注册、下载或内购流程。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "手机可以玩吗？怎么操作？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以。在手机浏览器中打开页面后，用手指在游戏区域拖动即可移动挡板，轻点游戏区域发球。页面同时支持键盘和触屏操作。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "最高分会保存在哪里？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "最高分保存在当前浏览器的本地存储 localStorage 中，不会上传到服务器。清除浏览器站点数据后，最高分会重置。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "怎样在霓虹21号中获得高分？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "尽量保持连击，优先击碎金边牌，接住双倍与多球道具，并利用挡板边缘改变球的角度。球落底会中断连击，因此稳定接球比盲目追分更重要。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "游戏涉及真实货币或赌博吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不涉及。游戏中的筹码只是虚拟分数，没有充值、提现、兑换、真钱下注或抽奖机制。赛博赌场只是视觉主题。"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://neon21-casino.pages.dev/#webpage",
+        "url": "https://neon21-casino.pages.dev/",
+        "name": "霓虹21号：赛博赌城弹球｜免费 H5 打砖块小游戏",
+        "description": "《霓虹21号》是一款单文件 HTML5 Canvas 打砖块游戏，使用虚拟筹码计分，支持键盘与触屏，完全在浏览器本地运行。",
+        "inLanguage": "zh-CN",
+        "isPartOf": { "@id": "https://neon21-casino.pages.dev/#website" },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "@id": "https://neon21-casino.pages.dev/#primaryimage",
+          "url": "https://neon21-casino.pages.dev/og-cover.png",
+          "width": 1200,
+          "height": 630,
+          "caption": "霓虹21号游戏画面：赛博赌场风格的霓虹打砖块牌桌"
+        },
+        "datePublished": "2026-11-05",
+        "dateModified": "2026-11-06",
+        "mainEntity": { "@id": "https://neon21-casino.pages.dev/#game" },
+        "breadcrumb": { "@id": "https://neon21-casino.pages.dev/#breadcrumb" },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["#geo-summary", "#guide", "#scoring", "#faq"]
+        },
+        "hasPart": [
+          { "@type": "WebPageElement", "@id": "https://neon21-casino.pages.dev/#play", "name": "开始游戏", "cssSelector": "#play", "isAccessibleForFree": true },
+          { "@type": "WebPageElement", "@id": "https://neon21-casino.pages.dev/#geo-summary", "name": "可引用摘要", "cssSelector": "#geo-summary" },
+          { "@type": "WebPageElement", "@id": "https://neon21-casino.pages.dev/#guide", "name": "玩法说明", "cssSelector": "#guide" },
+          { "@type": "WebPageElement", "@id": "https://neon21-casino.pages.dev/#scoring", "name": "计分与道具", "cssSelector": "#scoring" },
+          { "@type": "WebPageElement", "@id": "https://neon21-casino.pages.dev/#faq", "name": "常见问题", "cssSelector": "#faq" }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://neon21-casino.pages.dev/#article",
+        "headline": "霓虹21号：赛博赌城弹球玩法、规则与计分说明",
+        "alternativeHeadline": "免费单文件 H5 打砖块游戏完整指南",
+        "abstract": "《霓虹21号》（NEON 21）是一款以赛博赌场为视觉主题的免费 HTML5 Canvas 打砖块游戏。玩家用方向键或触屏移动挡板，反弹能量球击碎扑克牌砖块，通过连击、金边牌与 5 种虚拟筹码道具获取分数；3 枚虚拟筹码耗尽后结算。游戏不含真实货币赌博、充值或提现功能。",
+        "description": "页面以静态 HTML 文本形式提供游戏定义、操作方式、计分规则、道具列表、常见问题与合规声明，便于搜索引擎索引与生成式引擎摘要引用。",
+        "articleSection": ["可引用摘要", "玩法说明", "计分与道具", "常见问题"],
+        "keywords": ["霓虹21号", "NEON 21", "H5 小游戏", "打砖块", "HTML5 Canvas", "赛博朋克", "生成式引擎优化", "GEO"],
+        "author": { "@id": "https://neon21-casino.pages.dev/#organization" },
+        "publisher": { "@id": "https://neon21-casino.pages.dev/#organization" },
+        "datePublished": "2026-11-05",
+        "dateModified": "2026-11-06",
+        "inLanguage": "zh-CN",
+        "isAccessibleForFree": true,
+        "mainEntityOfPage": { "@id": "https://neon21-casino.pages.dev/#webpage" },
+        "about": [
+          { "@type": "Thing", "name": "打砖块游戏" },
+          { "@type": "Thing", "name": "HTML5 Canvas" },
+          { "@type": "Thing", "name": "赛博朋克视觉风格" },
+          { "@type": "Thing", "name": "虚拟筹码计分" }
+        ],
+        "mentions": [
+          { "@type": "Thing", "name": "localStorage 本地最高分" },
+          { "@type": "Thing", "name": "Web Audio API 合成音效" },
+          { "@type": "Thing", "name": "Pointer Events 触屏操作" },
+          { "@type": "Thing", "name": "prefers-reduced-motion 无障碍适配" }
+        ],
+        "citation": "NEON 21 Studio. 霓虹21号：赛博赌城弹球（免费 H5 打砖块小游戏）. https://neon21-casino.pages.dev/. 单文件 HTML，2026-11-06."
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://neon21-casino.pages.dev/#organization",
+        "name": "NEON 21 Studio",
+        "url": "https://neon21-casino.pages.dev/",
+        "description": "原创浏览器街机小游戏工作室，专注于单文件、无外部依赖的 HTML5 Canvas 游戏。",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://neon21-casino.pages.dev/icon.svg",
+          "caption": "霓虹21号 21 字标"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://neon21-casino.pages.dev/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://neon21-casino.pages.dev/" },
+          { "@type": "ListItem", "position": 2, "name": "开始游戏", "item": "https://neon21-casino.pages.dev/#play" },
+          { "@type": "ListItem", "position": 3, "name": "可引用摘要", "item": "https://neon21-casino.pages.dev/#geo-summary" },
+          { "@type": "ListItem", "position": 4, "name": "玩法说明", "item": "https://neon21-casino.pages.dev/#guide" },
+          { "@type": "ListItem", "position": 5, "name": "计分与道具", "item": "https://neon21-casino.pages.dev/#scoring" },
+          { "@type": "ListItem", "position": 6, "name": "常见问题", "item": "https://neon21-casino.pages.dev/#faq" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body id="top">
+
+  <a class="skip-link" href="#play">跳到游戏</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">21</span>
+        <span class="brand-name">NEON<span>21</span></span>
+        <span class="brand-sub">赛博赌城弹球</span>
+      </a>
+      <nav class="nav" aria-label="页面导航">
+        <a href="#play">开始游戏</a>
+        <a href="#guide">玩法</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div class="hero-head">
+          <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span>免费 H5 街机 · 无需下载 · 手机与 PC</p>
+          <h1 id="hero-title">
+            <span class="h1-top">霓虹<span class="h1-accent">21</span>号</span>
+            <span class="h1-bottom">赛博赌城弹球</span>
+          </h1>
+          <p class="lede">移动霓虹挡板，击碎整张牌桌。接住筹码、延续连击、守住最后的光球——<strong>靠技巧，不靠运气。</strong></p>
+          <div class="hero-meta">
+            <span>方向键 + 触屏</span>
+            <span>本地最高分</span>
+            <span>无限关卡</span>
+            <span>纯娱乐虚拟筹码</span>
+          </div>
+        </div>
+
+        <div class="game-column" id="play" tabindex="-1">
+          <div class="cabinet">
+            <div class="cabinet-rail" aria-hidden="true">
+              <span class="rail-label">Neon 21 / Skill Arcade</span>
+              <span class="rail-lights"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+              <span class="rail-label">Insert Skill</span>
+            </div>
+
+            <div class="hud">
+              <div class="hud-item hud-score" id="scoreItem">
+                <span class="hud-label">筹码 <i>SCORE</i></span>
+                <strong class="hud-value" id="scoreValue">000000</strong>
+              </div>
+              <div class="hud-item hud-best">
+                <span class="hud-label">最高 <i>BEST</i></span>
+                <strong class="hud-value" id="bestValue">000000</strong>
+              </div>
+              <div class="hud-item hud-level">
+                <span class="hud-label">关卡 <i>LEVEL</i></span>
+                <strong class="hud-value" id="levelValue">1</strong>
+              </div>
+              <div class="hud-item hud-combo">
+                <span class="hud-label">连击 <i>COMBO</i></span>
+                <strong class="hud-value" id="comboValue">0</strong>
+              </div>
+              <div class="hud-item hud-lives">
+                <span class="hud-label">生命 <i>LIVES</i></span>
+                <strong class="hud-value" id="livesValue" aria-label="剩余 3 枚虚拟筹码">◆ ◆ ◆</strong>
+              </div>
+              <div class="hud-actions">
+                <button class="icon-button" id="pauseBtn" type="button" aria-label="暂停游戏 Ⅱ" title="暂停（P）" disabled>Ⅱ</button>
+                <button class="icon-button" id="soundBtn" type="button" aria-label="声音开关 ♪" aria-pressed="true" title="声音开关">♪</button>
+              </div>
+            </div>
+
+            <p class="sr-only" id="gameInstructions">游戏区域。使用左右方向键或 A、D 键移动挡板，空格键或轻点游戏区域发球，P 键暂停。手机端可在游戏区域拖动手指移动挡板。击碎全部扑克牌砖块进入下一关，球落底会失去一枚虚拟筹码。</p>
+
+            <div class="stage" id="gameStage">
+              <canvas id="gameCanvas" width="960" height="600" tabindex="0" role="application" aria-label="霓虹21号游戏区域" aria-describedby="gameInstructions">
+                您的浏览器不支持 Canvas。请使用最新版 Chrome、Edge、Safari 或 Firefox 打开本页。
+              </canvas>
+              <div class="stage-scanlines" aria-hidden="true"></div>
+              <div class="stage-vignette" aria-hidden="true"></div>
+
+              <div class="buff-bar" id="buffBar" aria-label="当前增益" hidden>
+                <span class="buff" id="buffX2">×2 <i>10s</i></span>
+                <span class="buff" id="buffWide">宽板 <i>12s</i></span>
+                <span class="buff pink" id="buffShield">护盾 1</span>
+              </div>
+
+              <div class="stage-toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+              <!-- 开始界面 -->
+              <div class="overlay" id="startScreen">
+                <div class="overlay-card" role="dialog" aria-labelledby="startTitle" aria-describedby="startDesc">
+                  <div class="suit-divider" aria-hidden="true"><span>♠</span><span>♥</span><span>♣</span><span>♦</span></div>
+                  <p class="overlay-kicker">Welcome to the neon table</p>
+                  <h2 id="startTitle">技巧，是今晚唯一的筹码</h2>
+                  <p class="overlay-copy" id="startDesc">击碎全部扑克牌砖块，别让能量球落底。连击越长，得分倍率越高。清空牌面即可进入更快的下一关。</p>
+                  <div class="tag-row">
+                    <span>3 枚初始筹码</span>
+                    <span>5 种增益</span>
+                    <span>本地最高分</span>
+                  </div>
+                  <button class="btn btn-primary" id="startBtn" type="button">入座开局 <span aria-hidden="true">▶</span></button>
+                  <button class="text-link" id="howtoLink" type="button">先看 30 秒玩法</button>
+                  <p class="overlay-fineprint">纯娱乐 · 使用虚拟筹码 · 不含真实货币</p>
+                </div>
+              </div>
+
+              <!-- 暂停界面 -->
+              <div class="overlay" id="pauseScreen" hidden>
+                <div class="overlay-card" role="dialog" aria-labelledby="pauseTitle" aria-describedby="pauseDesc">
+                  <p class="overlay-kicker">Table on hold</p>
+                  <h2 id="pauseTitle">牌桌暂停</h2>
+                  <p class="overlay-copy" id="pauseDesc">球会停在原位，连击与增益计时也会一并冻结。准备好后继续。</p>
+                  <div class="overlay-stats">
+                    <span>当前筹码 <strong id="pauseScore">0</strong></span>
+                    <span>关卡 <strong id="pauseLevel">1</strong></span>
+                  </div>
+                  <div class="overlay-actions">
+                    <button class="btn btn-primary" id="resumeBtn" type="button">继续游戏 <span aria-hidden="true">▶</span></button>
+                    <button class="btn btn-secondary" id="restartPauseBtn" type="button">重新开局</button>
+                    <button class="btn btn-secondary" id="coverPauseBtn" type="button">返回开始界面</button>
+                  </div>
+                  <p class="overlay-fineprint">按 P 或 Esc 也可以继续</p>
+                </div>
+              </div>
+
+              <!-- 游戏结束结算 -->
+              <div class="overlay" id="gameOverScreen" hidden>
+                <div class="overlay-card" role="dialog" aria-labelledby="overTitle" aria-describedby="overDesc">
+                  <p class="overlay-kicker">Session complete</p>
+                  <h2 id="overTitle">本局结算</h2>
+                  <p class="overlay-copy" id="overDesc">筹码已耗尽。风格、角度与节奏都记在牌桌上，下一局可以把记录再推高。</p>
+                  <div class="final-score">
+                    <span>最终筹码</span>
+                    <strong id="finalScore">0</strong>
+                  </div>
+                  <div class="result-grid">
+                    <div><span>到达关卡</span><strong id="finalLevel">1</strong></div>
+                    <div><span>最高连击</span><strong id="finalCombo">0</strong></div>
+                    <div><span>击碎牌面</span><strong id="finalBricks">0</strong></div>
+                  </div>
+                  <p class="record-line" id="recordLine" hidden>NEW RECORD · 刷新本地最高分</p>
+                  <div class="overlay-actions">
+                    <button class="btn btn-primary" id="restartBtn" type="button">再来一局 <span aria-hidden="true">↻</span></button>
+                    <button class="btn btn-secondary" id="coverBtn" type="button">返回开始界面</button>
+                  </div>
+                  <p class="overlay-fineprint">虚拟筹码，无真实货币价值</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cabinet-foot">
+              <div class="key-hints">
+                <span><kbd>←</kbd><kbd>→</kbd> 移动</span>
+                <span><kbd>A</kbd><kbd>D</kbd> 移动</span>
+                <span><kbd>Space</kbd> 发球</span>
+                <span><kbd>P</kbd> 暂停</span>
+              </div>
+              <div class="touch-hints">
+                <span>拖动屏幕移动挡板</span>
+                <span>轻点游戏区域发球</span>
+              </div>
+              <span class="virtual-note">虚拟筹码 · 无现金价值</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>JACKPOT <em>◆</em> COMBO <em>◆</em> MULTIBALL <em>◆</em> SKILL OVER LUCK <em>◆</em> NEON 21 <em>◆</em></span>
+        <span>JACKPOT <em>◆</em> COMBO <em>◆</em> MULTIBALL <em>◆</em> SKILL OVER LUCK <em>◆</em> NEON 21 <em>◆</em></span>
+      </div>
+    </div>
+
+    <!-- GEO / 生成式引擎优化：纯静态、可索引、可引用的权威摘要 -->
+    <section class="section" id="geo-summary" aria-labelledby="geo-summary-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Reference / 供 AI 摘要与引用</p>
+          <h2 id="geo-summary-title">关于《霓虹21号》的可引用摘要</h2>
+          <p>以下事实以静态 HTML 文本提供，便于搜索引擎索引、生成式引擎摘要与第三方引用；内容与页面玩法、计分表和常见问题保持一致。</p>
+        </div>
+
+        <p class="geo-lead">《霓虹21号》（NEON 21）是一款以赛博赌场为视觉主题的<strong>免费单文件 HTML5 Canvas 打砖块游戏</strong>。玩家通过键盘或触屏移动挡板，反弹能量球击碎扑克牌砖块；连续击碎可累积连击倍率，接住筹码道具可获得双倍、加宽、多球、护盾或额外生命。游戏完全在浏览器本地运行，不含真实货币赌博、充值、提现或兑换功能。</p>
+
+        <dl class="geo-facts">
+          <div><dt>游戏名称</dt><dd>霓虹21号（NEON 21 / 赛博赌城弹球）</dd></div>
+          <div><dt>游戏类型</dt><dd>街机打砖块（Brick Breaker），单文件 H5 / HTML5 Canvas</dd></div>
+          <div><dt>运行平台</dt><dd>现代桌面浏览器与移动浏览器；无需下载、无需注册、无外部 CDN 依赖</dd></div>
+          <div><dt>操作方式</dt><dd>PC：方向键 / A、D 移动，空格发球，P 或 Esc 暂停；移动端：手指拖动挡板、轻点发球</dd></div>
+          <div><dt>计分规则</dt><dd>普通牌面 100+ 分、金边牌面 400+ 分；连击最高 ×2.50，双倍道具再 ×2；过关奖励为 500 × 关卡 + 200 × 剩余筹码</dd></div>
+          <div><dt>生命与结束</dt><dd>初始 3 枚虚拟筹码，球落底扣 1 枚，归零后进入结算；清空全部牌面即过关，关卡无限递增</dd></div>
+          <div><dt>数据与隐私</dt><dd>最高分仅保存在当前浏览器的 localStorage，不上传服务器、无联网排行榜、无账号系统</dd></div>
+          <div><dt>合规声明</dt><dd>虚拟筹码无现金价值；不提供真实货币下注、抽奖、充值、提现或兑换；赛博赌场仅为视觉主题</dd></div>
+          <div><dt>技术实现</dt><dd>HTML、CSS 与原生 JavaScript 全部内联于单个 index.html；图形由 Canvas 绘制，音效由 Web Audio API 合成</dd></div>
+        </dl>
+
+        <p class="geo-cite">建议引用：NEON 21 Studio，《霓虹21号：赛博赌城弹球》（免费 H5 打砖块小游戏），https://neon21-casino.pages.dev/，单文件 HTML，2026-11-06 访问。</p>
+      </div>
+    </section>
+
+    <section class="section" id="guide" aria-labelledby="guide-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">How to play / 30 秒上手</p>
+          <h2 id="guide-title">三件事，立刻开局</h2>
+          <p>《霓虹21号》把经典打砖块换上了赛博赌场的霓虹外衣：球拍决定反弹角度，牌面决定得分效率，护住底部的光球则是活下去的唯一条件。没有复杂规则，也不需要使用任何真实货币。</p>
+        </div>
+
+        <div class="guide-grid">
+          <article class="guide-card">
+            <span class="card-num">01 / MOVE</span>
+            <div class="guide-icon" aria-hidden="true">← →</div>
+            <h3>移动挡板，改变角度</h3>
+            <p>使用左右方向键或 A / D 移动挡板；手机端在游戏区域拖动手指即可。用挡板边缘接球，可以让球以更斜的角度飞向牌面死角。</p>
+          </article>
+          <article class="guide-card">
+            <span class="card-num">02 / BREAK</span>
+            <div class="guide-icon" aria-hidden="true">♠ ♥</div>
+            <h3>击碎牌面，累计连击</h3>
+            <p>按空格或轻点游戏区域发球。击碎扑克牌砖块会累积连击，连击越高得分倍率越高；挡板接球或球落底都会重置连击。</p>
+          </article>
+          <article class="guide-card">
+            <span class="card-num">03 / SURVIVE</span>
+            <div class="guide-icon" aria-hidden="true">◆ 3</div>
+            <h3>守住筹码，清空全场</h3>
+            <p>球落底会失去一枚虚拟筹码，3 枚耗尽后进入结算。清空当前所有牌面即可过关，关卡会更快、更耐打，并结算过关奖励。</p>
+          </article>
+        </div>
+
+        <div class="rule-callout">
+          <div class="callout-badge" aria-hidden="true">21</div>
+          <div>
+            <h3>一句话规则</h3>
+            <p>用挡板反弹能量球，击碎全部扑克牌砖块过关；球落底扣除一枚筹码，筹码清零后游戏结束。接住掉落道具，可以双倍得分、加宽挡板、分裂多球或抵消一次落球。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="scoring" aria-labelledby="scoring-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">Scoring &amp; power-ups</p>
+          <h2 id="scoring-title">分数怎么来，道具怎么用</h2>
+          <p>基础分来自牌面，上限来自连击与双倍增益的叠乘。想刷新本地最高分，重点是“稳定接球 + 少断连击”，而不是盲目追求一次击碎更多砖块。</p>
+        </div>
+
+        <div class="score-layout">
+          <div class="score-panel">
+            <h3>计分规则</h3>
+            <p class="panel-sub">以下为基础数值，实际得分会随关卡、牌面耐久和当前增益变化。</p>
+            <table class="score-table">
+              <caption class="sr-only">霓虹21号基础计分规则：得分项与对应倍率 / 数值</caption>
+              <thead>
+                <tr>
+                  <th scope="col">得分项</th>
+                  <th scope="col">倍率 / 数值</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>普通牌面</td>
+                  <td>100+ / 块</td>
+                </tr>
+                <tr>
+                  <td>金边牌面</td>
+                  <td>400+ / 块</td>
+                </tr>
+                <tr>
+                  <td>连击加成</td>
+                  <td>最高 ×2.50</td>
+                </tr>
+                <tr>
+                  <td>双倍筹码</td>
+                  <td>得分 ×2</td>
+                </tr>
+                <tr>
+                  <td>过关奖励</td>
+                  <td>500 × 关卡 + 200 × 剩余筹码</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="power-panel">
+            <h3>5 种筹码增益</h3>
+            <p class="panel-sub">金边牌更易掉落筹码。接住即可生效，计时型增益可刷新持续时间。</p>
+            <ul class="power-list">
+              <li>
+                <span class="power-chip" aria-hidden="true">B</span>
+                <div><strong>多球分裂</strong><span>立即增加能量球，最多同时存在 5 球。</span></div>
+              </li>
+              <li>
+                <span class="power-chip" aria-hidden="true">W</span>
+                <div><strong>加宽挡板</strong><span>12 秒内挡板宽度提升至 1.5 倍，更容易接球。</span></div>
+              </li>
+              <li>
+                <span class="power-chip" aria-hidden="true">×2</span>
+                <div><strong>双倍筹码</strong><span>10 秒内所有击碎得分翻倍，可与连击加成叠乘。</span></div>
+              </li>
+              <li>
+                <span class="power-chip" aria-hidden="true">◎</span>
+                <div><strong>护盾</strong><span>生成一次底部护盾，抵消一次落球并把球弹回场内。</span></div>
+              </li>
+              <li>
+                <span class="power-chip" aria-hidden="true">+1</span>
+                <div><strong>额外筹码</strong><span>恢复 1 枚生命，上限 5 枚；生命即本局的容错次数。</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-layout">
+        <div class="faq-intro">
+          <div class="section-head">
+            <p class="kicker">FAQ / 游戏问答</p>
+            <h2 id="faq-title">关于这张霓虹牌桌</h2>
+            <p>常见问题、运行方式与数据说明。游戏完全在浏览器本地运行，不需要登录，也不会上传分数。</p>
+          </div>
+          <div class="quick-facts">
+            <div><span>游戏类型</span><strong>赛博赌场风打砖块</strong></div>
+            <div><span>运行平台</span><strong>现代浏览器</strong></div>
+            <div><span>操作方式</span><strong>键盘 / 触屏</strong></div>
+            <div><span>单局时长</span><strong>约 3–10 分钟</strong></div>
+            <div><span>费用</span><strong>免费，无内购</strong></div>
+            <div><span>数据存储</span><strong>浏览器本地</strong></div>
+          </div>
+        </div>
+
+        <div class="faq-list">
+          <details open>
+            <summary>霓虹21号需要下载或注册吗？</summary>
+            <p>不需要。它是一个单文件静态 H5 游戏，打开网页即可开始，没有账号、注册、下载安装或内购流程。核心玩法、界面与全部图形均由 HTML5 Canvas、CSS 和原生 JavaScript 生成。</p>
+          </details>
+          <details>
+            <summary>手机可以玩吗？怎么操作？</summary>
+            <p>可以。在手机浏览器中打开页面后，用手指在游戏区域拖动即可移动挡板，轻点游戏区域发球。页面同时支持方向键、A / D、空格与 P 键；横屏和竖屏布局都会自动适配。</p>
+          </details>
+          <details>
+            <summary>最高分会保存在哪里？</summary>
+            <p>最高分保存在当前浏览器的本地存储 <code>localStorage</code> 中，不会上传到服务器，也没有联网排行榜。清除浏览器站点数据、使用无痕模式或更换设备后，最高分记录会重置。</p>
+          </details>
+          <details>
+            <summary>怎样在霓虹21号中获得高分？</summary>
+            <p>优先保持连击，连续击碎牌面可把得分倍率推向最高 2.5 倍；尽量接住双倍与多球道具，金边牌分数更高且更容易掉落筹码。用挡板边缘改变反弹角，能把球送进牌面密集区，但不要为了追球而丢掉稳定接球。</p>
+          </details>
+          <details>
+            <summary>游戏涉及真实货币或赌博吗？</summary>
+            <p>不涉及。游戏中的“筹码”只是虚拟分数，不能充值、提现、兑换或转让，也没有真钱下注和抽奖机制。赛博赌场只是视觉主题，核心玩法是技巧向的打砖块。</p>
+          </details>
+          <details>
+            <summary>可以离线玩吗？</summary>
+            <p>可以。页面没有外部依赖，若已将完整的 HTML 文件与配套图标保存到本地，双击打开即可游玩。社交分享封面等 SEO 附属文件只影响链接预览，不影响游戏运行。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div class="cta-card">
+          <div class="cta-copy">
+            <p class="kicker">One more round?</p>
+            <h2 id="cta-title">牌桌已经亮起，下一局刷新纪录。</h2>
+            <p>无需注册、没有等待。用三枚虚拟筹码，打出属于你的连击。支持键盘与触屏，手机也能直接开局。</p>
+          </div>
+          <div class="cta-actions">
+            <button class="btn btn-primary" id="ctaStart" type="button">立即开局 <span aria-hidden="true">▶</span></button>
+            <a class="btn btn-secondary" href="#guide">再读一遍玩法</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <a class="footer-brand" href="#top">NEON<span>21</span> · 赛博赌城弹球</a>
+        <nav class="footer-links" aria-label="页脚导航">
+          <a href="#play">开始游戏</a>
+          <a href="#geo-summary">可引用摘要</a>
+          <a href="#guide">玩法说明</a>
+          <a href="#scoring">计分与道具</a>
+          <a href="#faq">常见问题</a>
+        </nav>
+      </div>
+      <p class="footer-legal">
+        <strong>娱乐声明：</strong>本游戏为原创浏览器街机，使用虚拟筹码与虚拟分数，不提供真实货币赌博、充值、提现或兑换服务。页面无外部游戏素材依赖，图形与音效均由浏览器实时生成。最高分仅保存在你的浏览器本地。
+      </p>
+      <p class="footer-legal">© <span id="year">2026</span> NEON 21 Studio · 单文件 H5 游戏 · 适配桌面与移动端</p>
+    </div>
+  </footer>
+
+  <noscript>
+    <div style="max-width: 760px; margin: 0 auto; padding: 20px; color: #ffd66b; text-align: center;">
+      请启用 JavaScript 以开始游戏；你仍然可以阅读上方的玩法与常见问题。
+    </div>
+  </noscript>
+
+  <script>
+
+  /*
+   * 霓虹21号 · 单文件 Canvas 打砖块
+   * 原生 JavaScript，无任何外部依赖。
+   * 代码分为：基础工具 / 状态 / 音频 / UI / 布局 / 关卡 / 输入 / 游戏循环 / 绘制。
+   */
+  (() => {
+    'use strict';
+
+    /* ==========================================================
+       1. DOM 引用与基础工具
+       ========================================================== */
+    const $ = (id) => document.getElementById(id);
+    const canvas = $('gameCanvas');
+    const ctx = canvas.getContext('2d');
+    const stage = $('gameStage');
+
+    const scoreEl = $('scoreValue');
+    const bestEl = $('bestValue');
+    const levelEl = $('levelValue');
+    const comboEl = $('comboValue');
+    const livesEl = $('livesValue');
+    const pauseBtn = $('pauseBtn');
+    const soundBtn = $('soundBtn');
+    const startScreen = $('startScreen');
+    const pauseScreen = $('pauseScreen');
+    const gameOverScreen = $('gameOverScreen');
+    const startBtn = $('startBtn');
+    const howtoLink = $('howtoLink');
+    const resumeBtn = $('resumeBtn');
+    const restartPauseBtn = $('restartPauseBtn');
+    const coverPauseBtn = $('coverPauseBtn');
+    const restartBtn = $('restartBtn');
+    const coverBtn = $('coverBtn');
+    const ctaStart = $('ctaStart');
+    const toastEl = $('toast');
+    const buffBar = $('buffBar');
+    const buffX2 = $('buffX2');
+    const buffWide = $('buffWide');
+    const buffShield = $('buffShield');
+    const pauseScore = $('pauseScore');
+    const pauseLevel = $('pauseLevel');
+    const finalScore = $('finalScore');
+    const finalLevel = $('finalLevel');
+    const finalCombo = $('finalCombo');
+    const finalBricks = $('finalBricks');
+    const recordLine = $('recordLine');
+    const yearEl = $('year');
+
+    const TAU = Math.PI * 2;
+    const STORAGE_BEST = 'neon21.best.v1';
+    const STORAGE_SOUND = 'neon21.sound.v1';
+    const SUITS = ['♠', '♥', '♣', '♦'];
+    const REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const COARSE_POINTER = window.matchMedia('(pointer: coarse)').matches;
+
+    const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+    const rand = (min, max) => min + Math.random() * (max - min);
+    const randInt = (min, max) => Math.floor(rand(min, max + 1));
+    const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+    /** 数字补零，保持街机计分板观感 */
+    function scoreText(value) {
+      return String(Math.max(0, Math.floor(value))).padStart(6, '0');
+    }
+
+    /** 千分位数字，用于结算面板 */
+    function prettyNumber(value) {
+      return Math.max(0, Math.floor(value)).toLocaleString('zh-CN');
+    }
+
+    /** 读取本地最高分，异常时静默降级 */
+    function readBest() {
+      try {
+        const value = Number.parseInt(localStorage.getItem(STORAGE_BEST) || '0', 10);
+        return Number.isFinite(value) && value > 0 ? value : 0;
+      } catch (error) {
+        return 0;
+      }
+    }
+
+    /** 读取声音偏好 */
+    function readSound() {
+      try {
+        return localStorage.getItem(STORAGE_SOUND) !== 'off';
+      } catch (error) {
+        return true;
+      }
+    }
+
+    /* ==========================================================
+       2. 游戏状态
+       ========================================================== */
+    const G = {
+      mode: 'start',                    // start | playing | paused | levelclear | gameover
+      W: 0,
+      H: 0,
+      dpr: 1,
+      score: 0,
+      best: readBest(),
+      startBest: 0,
+      level: 1,
+      lives: 3,
+      combo: 0,
+      maxCombo: 0,
+      bricksBroken: 0,
+      lastBonus: 0,
+      paddle: {
+        x: 0,
+        y: 0,
+        w: 120,
+        h: 14,
+        baseW: 120,
+        vx: 0,
+        targetX: null
+      },
+      balls: [],
+      bricks: [],
+      powerups: [],
+      particles: [],
+      floaters: [],
+      motes: [],
+      keys: { left: false, right: false },
+      timers: { wide: 0, x2: 0 },
+      shield: false,
+      awaitingServe: true,
+      pointerDown: false,
+      pointerId: null,
+      shake: 0,
+      time: 0,
+      levelClearTimer: 0,
+      lastFrame: 0,
+      toastTimer: 0,
+      soundOn: readSound(),
+      lastBuffText: '',
+      autoPaused: false
+    };
+
+    // 每个砖块所属行位的配色（边线、暗面、内部填充、牌面符号）
+    const BRICK_STYLES = [
+      { edge: '#4ff5ff', fill: 'rgba(12, 50, 72, 0.90)', top: 'rgba(79, 245, 255, 0.24)', suit: '#bdfbff', glow: 'rgba(79, 245, 255, 0.22)' },
+      { edge: '#ff4fa3', fill: 'rgba(63, 17, 51, 0.92)', top: 'rgba(255, 79, 163, 0.22)', suit: '#ffc1dd', glow: 'rgba(255, 79, 163, 0.20)' },
+      { edge: '#a389ff', fill: 'rgba(38, 27, 88, 0.92)', top: 'rgba(163, 137, 255, 0.22)', suit: '#d8ccff', glow: 'rgba(154, 108, 255, 0.22)' },
+      { edge: '#ffd66b', fill: 'rgba(69, 48, 12, 0.92)', top: 'rgba(255, 214, 107, 0.25)', suit: '#fff1c1', glow: 'rgba(255, 214, 107, 0.24)' },
+      { edge: '#64ffc4', fill: 'rgba(10, 57, 46, 0.92)', top: 'rgba(100, 255, 196, 0.20)', suit: '#c8ffe9', glow: 'rgba(100, 255, 196, 0.18)' }
+    ];
+
+    const GOLD_STYLE = {
+      edge: '#ffe08a',
+      fill: 'rgba(92, 63, 13, 0.96)',
+      top: 'rgba(255, 240, 183, 0.46)',
+      suit: '#fff4cb',
+      glow: 'rgba(255, 214, 107, 0.36)'
+    };
+
+    /* ==========================================================
+       3. 轻量合成音频（无外部音效文件）
+       ========================================================== */
+    const audio = {
+      ctx: null,
+      master: null
+    };
+
+    function ensureAudio() {
+      if (!G.soundOn) return null;
+      try {
+        if (!audio.ctx) {
+          const AudioCtor = window.AudioContext || window.webkitAudioContext;
+          if (!AudioCtor) return null;
+          audio.ctx = new AudioCtor();
+          audio.master = audio.ctx.createGain();
+          audio.master.gain.value = 0.3;
+          audio.master.connect(audio.ctx.destination);
+        }
+        if (audio.ctx.state === 'suspended') {
+          audio.ctx.resume();
+        }
+        return audio.ctx;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function tone(freq, duration, type = 'sine', volume = 0.1, delay = 0, slideTo = 0) {
+      if (!G.soundOn) return;
+      const ac = ensureAudio();
+      if (!ac || !audio.master) return;
+
+      const start = ac.currentTime + delay;
+      const osc = ac.createOscillator();
+      const gain = ac.createGain();
+
+      osc.type = type;
+      osc.frequency.setValueAtTime(Math.max(40, freq), start);
+      if (slideTo > 0) {
+        osc.frequency.exponentialRampToValueAtTime(Math.max(40, slideTo), start + duration);
+      }
+
+      gain.gain.setValueAtTime(0.0001, start);
+      gain.gain.exponentialRampToValueAtTime(Math.max(0.0002, volume), start + 0.008);
+      gain.gain.exponentialRampToValueAtTime(0.0001, start + duration);
+
+      osc.connect(gain);
+      gain.connect(audio.master);
+      osc.start(start);
+      osc.stop(start + duration + 0.04);
+    }
+
+    function sfx(name) {
+      if (!G.soundOn) return;
+      switch (name) {
+        case 'start':
+          tone(220, 0.12, 'triangle', 0.13);
+          tone(330, 0.15, 'triangle', 0.12, 0.09);
+          tone(520, 0.24, 'sine', 0.11, 0.18);
+          break;
+        case 'serve':
+          tone(420, 0.08, 'square', 0.06, 0, 760);
+          break;
+        case 'paddle':
+          tone(180, 0.05, 'square', 0.035);
+          break;
+        case 'wall':
+          tone(130, 0.028, 'sine', 0.018);
+          break;
+        case 'brick': {
+          const base = 330 + Math.min(G.combo, 28) * 13;
+          tone(base, 0.05, 'triangle', 0.075);
+          tone(base * 2, 0.032, 'sine', 0.03);
+          break;
+        }
+        case 'gold':
+          tone(780, 0.07, 'triangle', 0.1);
+          tone(1170, 0.1, 'sine', 0.09, 0.055);
+          tone(1560, 0.15, 'sine', 0.06, 0.11);
+          break;
+        case 'power':
+          tone(520, 0.06, 'sine', 0.09);
+          tone(780, 0.1, 'sine', 0.09, 0.055);
+          tone(1040, 0.12, 'triangle', 0.055, 0.11);
+          break;
+        case 'shield':
+          tone(680, 0.13, 'sine', 0.09, 0, 1180);
+          break;
+        case 'level':
+          [523, 659, 784, 1046].forEach((freq, i) => tone(freq, 0.13, 'triangle', 0.09, i * 0.085));
+          break;
+        case 'lose':
+          tone(210, 0.28, 'sawtooth', 0.055, 0, 72);
+          break;
+        case 'over':
+          [392, 330, 262].forEach((freq, i) => tone(freq, 0.22, 'triangle', 0.07, i * 0.12));
+          break;
+        case 'click':
+          tone(620, 0.03, 'sine', 0.035);
+          break;
+        default:
+          break;
+      }
+    }
+
+    /* ==========================================================
+       4. HUD、覆盖层与提示
+       ========================================================== */
+    function updateHud() {
+      if (G.score > G.best) G.best = G.score;
+
+      scoreEl.textContent = scoreText(G.score);
+      bestEl.textContent = scoreText(G.best);
+      levelEl.textContent = String(G.level);
+      comboEl.textContent = String(G.combo);
+
+      const lives = clamp(G.lives, 0, 5);
+      const livesText = lives > 0 ? Array.from({ length: lives }, () => '◆').join(' ') : '—';
+      livesEl.textContent = livesText;
+      livesEl.setAttribute('aria-label', `剩余 ${lives} 枚虚拟筹码 ${livesText}`);
+
+      const isPaused = G.mode === 'paused';
+      pauseBtn.disabled = !(G.mode === 'playing' || G.mode === 'paused');
+      pauseBtn.textContent = isPaused ? '▶' : 'Ⅱ';
+      pauseBtn.setAttribute('aria-label', isPaused ? '继续游戏 ▶' : '暂停游戏 Ⅱ');
+      pauseBtn.title = isPaused ? '继续（P）' : '暂停（P）';
+    }
+
+    function updateSoundButton() {
+      soundBtn.setAttribute('aria-pressed', String(G.soundOn));
+      soundBtn.setAttribute('aria-label', G.soundOn ? '声音开关 ♪' : '声音开关 ✕');
+      soundBtn.title = G.soundOn ? '关闭声音' : '开启声音';
+      soundBtn.textContent = G.soundOn ? '♪' : '✕';
+    }
+
+    function hideOverlays() {
+      startScreen.hidden = true;
+      pauseScreen.hidden = true;
+      gameOverScreen.hidden = true;
+    }
+
+    function focusSoon(el) {
+      if (!el) return;
+      window.setTimeout(() => {
+        try {
+          el.focus({ preventScroll: true });
+        } catch (error) {
+          el.focus();
+        }
+      }, 60);
+    }
+
+    function showStartScreen(options = {}) {
+      const { focus = true } = options;
+      G.mode = 'start';
+      hideOverlays();
+      startScreen.hidden = false;
+      setupAttract();
+      updateHud();
+      updateBuffs();
+      if (focus) focusSoon(startBtn);
+    }
+
+    function showPauseScreen(auto = false) {
+      if (G.mode !== 'playing') return;
+      G.mode = 'paused';
+      G.autoPaused = auto;
+      G.keys.left = false;
+      G.keys.right = false;
+      G.paddle.targetX = null;
+      G.pointerDown = false;
+      pauseScore.textContent = prettyNumber(G.score);
+      pauseLevel.textContent = String(G.level);
+      pauseScreen.hidden = false;
+      updateHud();
+      if (!auto) focusSoon(resumeBtn);
+    }
+
+    function showGameOverScreen() {
+      finalScore.textContent = prettyNumber(G.score);
+      finalLevel.textContent = String(G.level);
+      finalCombo.textContent = String(G.maxCombo);
+      finalBricks.textContent = String(G.bricksBroken);
+      recordLine.hidden = !(G.score > G.startBest && G.score > 0);
+      hideOverlays();
+      gameOverScreen.hidden = false;
+      updateHud();
+      focusSoon(restartBtn);
+    }
+
+    let toastTimeout = 0;
+    function setToast(message, duration = 1800) {
+      if (!message) return;
+      window.clearTimeout(toastTimeout);
+      toastEl.textContent = message;
+      toastEl.classList.add('show');
+      toastTimeout = window.setTimeout(() => {
+        toastEl.classList.remove('show');
+      }, duration);
+    }
+
+    function updateBuffs() {
+      const showX2 = G.timers.x2 > 0.05;
+      const showWide = G.timers.wide > 0.05;
+      const showShield = G.shield;
+      const buffText = [
+        showX2 ? `x2:${Math.ceil(G.timers.x2)}` : '',
+        showWide ? `wide:${Math.ceil(G.timers.wide)}` : '',
+        showShield ? 'shield' : ''
+      ].join('|');
+
+      if (buffText === G.lastBuffText) return;
+      G.lastBuffText = buffText;
+
+      buffX2.hidden = !showX2;
+      buffWide.hidden = !showWide;
+      buffShield.hidden = !showShield;
+
+      if (showX2) buffX2.textContent = `×2 ${Math.ceil(G.timers.x2)}s`;
+      if (showWide) buffWide.textContent = `宽板 ${Math.ceil(G.timers.wide)}s`;
+      if (showShield) buffShield.textContent = '护盾 1';
+
+      const anyVisible = showX2 || showWide || showShield;
+      buffBar.hidden = !anyVisible;
+      buffBar.setAttribute('aria-label', anyVisible ? '当前增益已激活' : '当前没有增益');
+    }
+
+    function saveBest() {
+      try {
+        localStorage.setItem(STORAGE_BEST, String(Math.max(0, Math.floor(G.best))));
+      } catch (error) {
+        /* 隐私模式或存储禁用时静默失败 */
+      }
+    }
+
+    function saveSound() {
+      try {
+        localStorage.setItem(STORAGE_SOUND, G.soundOn ? 'on' : 'off');
+      } catch (error) {
+        /* 忽略存储异常 */
+      }
+    }
+
+    /* ==========================================================
+       5. 响应式布局与世界缩放
+       ========================================================== */
+    function basePaddleWidth() {
+      return clamp(G.W * 0.19, 82, 172);
+    }
+
+    function paddleHeight() {
+      return clamp(G.H * 0.024, 10, 16);
+    }
+
+    function ballRadius() {
+      return clamp(Math.min(G.W, G.H) * 0.013, 5, 9);
+    }
+
+    function ballSpeed() {
+      const levelBoost = 1 + Math.min(G.level - 1, 12) * 0.045;
+      return clamp(G.H * 0.64, 260, 470) * levelBoost;
+    }
+
+    function paddleBottomY() {
+      return G.H - Math.max(32, G.H * 0.073);
+    }
+
+    function makeMotes() {
+      const count = REDUCED_MOTION ? 7 : clamp(Math.round((G.W * G.H) / 25000), 8, 26);
+      G.motes = Array.from({ length: count }, () => ({
+        x: rand(0, G.W),
+        y: rand(G.H * 0.08, G.H * 0.92),
+        size: rand(8, 21),
+        speed: rand(4, 15),
+        alpha: rand(0.018, 0.065),
+        suit: pick(SUITS),
+        phase: rand(0, TAU)
+      }));
+    }
+
+    function resizeCanvas() {
+      const rect = stage.getBoundingClientRect();
+      const width = Math.max(1, Math.round(rect.width));
+      const height = Math.max(1, Math.round(rect.height));
+      const dpr = clamp(window.devicePixelRatio || 1, 1, 2);
+
+      if (width === G.W && height === G.H && dpr === G.dpr) return;
+
+      const oldW = G.W;
+      const oldH = G.H;
+
+      G.W = width;
+      G.H = height;
+      G.dpr = dpr;
+
+      canvas.width = Math.round(width * dpr);
+      canvas.height = Math.round(height * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.imageSmoothingEnabled = true;
+
+      makeMotes();
+
+      if (oldW > 1 && oldH > 1 && G.bricks.length > 0) {
+        adaptWorld(oldW, oldH, width, height);
+      } else {
+        G.paddle.baseW = basePaddleWidth();
+        G.paddle.w = G.paddle.baseW * (G.timers.wide > 0 ? 1.5 : 1);
+        G.paddle.h = paddleHeight();
+        G.paddle.y = paddleBottomY();
+        G.paddle.x = G.W / 2;
+      }
+
+    }
+
+    /**
+     * 窗口尺寸变化时，按比例缩放场上物件，避免直接重置当前关卡。
+     * 球速会重新按当前屏幕高度计算，保持手感一致。
+     */
+    function adaptWorld(oldW, oldH, newW, newH) {
+      const sx = newW / oldW;
+      const sy = newH / oldH;
+
+      const p = G.paddle;
+      p.baseW = basePaddleWidth();
+      p.h = paddleHeight();
+      p.w = p.baseW * (G.timers.wide > 0 ? 1.5 : 1);
+      p.y = paddleBottomY();
+      p.x = clamp(p.x * sx, p.w / 2 + 4, G.W - p.w / 2 - 4);
+      p.targetX = null;
+      p.vx = 0;
+
+      G.bricks.forEach((brick) => {
+        brick.x *= sx;
+        brick.y *= sy;
+        brick.w *= sx;
+        brick.h *= sy;
+      });
+
+      const speed = ballSpeed();
+      G.balls.forEach((ball) => {
+        ball.x *= sx;
+        ball.y *= sy;
+        ball.r = ballRadius();
+        ball.speed = speed;
+        ball.trail = [];
+        if (ball.attached) {
+          ball.x = p.x;
+          ball.y = p.y - p.h / 2 - ball.r - 5;
+        } else {
+          const magnitude = Math.hypot(ball.vx, ball.vy) || 1;
+          ball.vx = (ball.vx / magnitude) * speed;
+          ball.vy = (ball.vy / magnitude) * speed;
+        }
+      });
+
+      G.powerups.forEach((token) => {
+        token.x *= sx;
+        token.y *= sy;
+        token.r = clamp(Math.min(G.W, G.H) * 0.027, 10, 18);
+        token.vy = G.H * 0.17;
+      });
+
+      G.particles.forEach((particle) => {
+        particle.x *= sx;
+        particle.y *= sy;
+      });
+
+      G.floaters.forEach((floater) => {
+        floater.x *= sx;
+        floater.y *= sy;
+      });
+    }
+
+    function setupPaddleAtCenter() {
+      const p = G.paddle;
+      p.baseW = basePaddleWidth();
+      p.w = p.baseW * (G.timers.wide > 0 ? 1.5 : 1);
+      p.h = paddleHeight();
+      p.x = G.W / 2;
+      p.y = paddleBottomY();
+      p.vx = 0;
+      p.targetX = null;
+    }
+
+    function applyPaddleWidthFromPowerup() {
+      const p = G.paddle;
+      const center = p.x;
+      p.baseW = basePaddleWidth();
+      p.w = p.baseW * (G.timers.wide > 0 ? 1.5 : 1);
+      p.x = clamp(center, p.w / 2 + 4, G.W - p.w / 2 - 4);
+    }
+
+    /* ==========================================================
+       6. 关卡生成
+       ========================================================== */
+    function buildLevel(level) {
+      const bricks = [];
+      if (G.W < 1 || G.H < 1) return bricks;
+
+      const cols = G.W < 570 ? 5 : (G.W < 850 ? 7 : 9);
+      const rows = G.W < 570 ? 6 : 5;
+      const marginX = G.W * (G.W < 570 ? 0.05 : 0.06);
+      const top = G.H * (G.W < 570 ? 0.155 : 0.145);
+      const bottom = G.H * (G.W < 570 ? 0.515 : 0.53);
+      const gapX = Math.max(4, G.W * 0.009);
+      const gapY = Math.max(4, G.H * 0.013);
+      const brickW = (G.W - marginX * 2 - gapX * (cols - 1)) / cols;
+      const brickH = (bottom - top - gapY * (rows - 1)) / rows;
+      const desiredGold = Math.min(3, 1 + Math.floor((level - 1) / 3));
+      let goldCount = 0;
+
+      for (let row = 0; row < rows; row++) {
+        for (let col = 0; col < cols; col++) {
+          // 高关卡加入自然缺口，让反弹路线更有变化
+          const hasHole = level >= 3 && ((row * 3 + col * 2 + level) % 13 === 0) && bricks.length > 10;
+          if (hasHole) continue;
+
+          let isGold = false;
+          if (goldCount < desiredGold && Math.random() < 0.15) {
+            isGold = true;
+            goldCount += 1;
+          }
+
+          let hp = 1;
+          const toughChance = Math.min(0.44, 0.04 + level * 0.032);
+          if (Math.random() < toughChance) hp = 2;
+          if (level >= 5 && Math.random() < Math.min(0.17, 0.02 + level * 0.014)) hp = 3;
+          if (isGold) hp = Math.max(2, hp);
+
+          const basePoints = isGold ? 400 + level * 20 : 100 + row * 15 + level * 10;
+          const points = Math.round(basePoints + (hp - 1) * 35);
+          const styleIndex = (row + level - 1) % BRICK_STYLES.length;
+          const x = marginX + col * (brickW + gapX);
+          const y = top + row * (brickH + gapY);
+
+          bricks.push({
+            x,
+            y,
+            w: brickW,
+            h: brickH,
+            hp,
+            maxHp: hp,
+            points,
+            special: isGold,
+            styleIndex,
+            suit: isGold ? '♦' : SUITS[(row + col + level) % SUITS.length],
+            flash: 0,
+            phase: rand(0, TAU)
+          });
+        }
+      }
+
+      // 保证每关至少有一块金边牌
+      if (bricks.length > 0 && goldCount === 0) {
+        const lucky = pick(bricks);
+        lucky.special = true;
+        lucky.suit = '♦';
+        lucky.hp = Math.max(2, lucky.hp);
+        lucky.maxHp = lucky.hp;
+        lucky.points = Math.round(400 + level * 20 + (lucky.hp - 1) * 35);
+      }
+
+      return bricks;
+    }
+
+    /* ==========================================================
+       7. 开场预览与关卡初始化
+       ========================================================== */
+    function attachServeBall() {
+      const radius = ballRadius();
+      const p = G.paddle;
+      G.balls = [{
+        x: p.x,
+        y: p.y - p.h / 2 - radius - 5,
+        r: radius,
+        vx: 0,
+        vy: 0,
+        speed: ballSpeed(),
+        attached: true,
+        trail: []
+      }];
+      G.awaitingServe = true;
+    }
+
+    function setupLevel(level) {
+      G.level = level;
+      G.combo = 0;
+      G.timers.wide = 0;
+      G.timers.x2 = 0;
+      G.shield = false;
+      G.powerups = [];
+      G.particles = [];
+      G.floaters = [];
+      G.shake = 0;
+      G.bricks = buildLevel(level);
+      setupPaddleAtCenter();
+      attachServeBall();
+      updateHud();
+      updateBuffs();
+    }
+
+    function setupAttract() {
+      G.score = 0;
+      G.level = 1;
+      G.lives = 3;
+      G.combo = 0;
+      G.maxCombo = 0;
+      G.bricksBroken = 0;
+      G.lastBonus = 0;
+      G.timers.wide = 0;
+      G.timers.x2 = 0;
+      G.shield = false;
+      G.powerups = [];
+      G.particles = [];
+      G.floaters = [];
+      G.shake = 0;
+      G.bricks = buildLevel(1);
+      setupPaddleAtCenter();
+      attachServeBall();
+      updateBuffs();
+    }
+
+    /* ==========================================================
+       8. 游戏流程（开始 / 暂停 / 过关 / 结束）
+       ========================================================== */
+    function startGame() {
+      ensureAudio();
+      sfx('start');
+
+      G.score = 0;
+      G.startBest = G.best;
+      G.level = 1;
+      G.lives = 3;
+      G.combo = 0;
+      G.maxCombo = 0;
+      G.bricksBroken = 0;
+      G.lastBonus = 0;
+      G.autoPaused = false;
+
+      hideOverlays();
+      setupLevel(1);
+      G.mode = 'playing';
+      updateHud();
+      updateBuffs();
+      pauseBtn.disabled = false;
+      setToast('击碎全部牌面 · 点击或按空格发球', 2600);
+      canvas.focus({ preventScroll: true });
+
+      // 手机首屏上方有标题和 HUD，开局后把牌桌滚入视野，避免挡板落在屏幕外
+      if (window.matchMedia('(max-width: 760px)').matches) {
+        const gameColumn = $('play');
+        if (gameColumn) {
+          window.setTimeout(() => {
+            gameColumn.scrollIntoView({
+              behavior: REDUCED_MOTION ? 'auto' : 'smooth',
+              block: 'start'
+            });
+          }, 60);
+        }
+      }
+    }
+
+    function returnToStart() {
+      hideOverlays();
+      startScreen.hidden = false;
+      G.mode = 'start';
+      G.autoPaused = false;
+      setupAttract();
+      updateHud();
+      updateBuffs();
+      hideToast();
+      focusSoon(startBtn);
+    }
+
+    function pauseGame(auto = false) {
+      if (G.mode !== 'playing') return;
+      showPauseScreen(auto);
+    }
+
+    function resumeGame() {
+      if (G.mode !== 'paused') return;
+      ensureAudio();
+      sfx('click');
+      hideOverlays();
+      G.mode = 'playing';
+      G.autoPaused = false;
+      G.lastFrame = performance.now();
+      updateHud();
+      canvas.focus({ preventScroll: true });
+    }
+
+    function togglePause() {
+      if (G.mode === 'playing') {
+        pauseGame(false);
+      } else if (G.mode === 'paused') {
+        resumeGame();
+      }
+    }
+
+    function completeLevel() {
+      if (G.mode !== 'playing') return;
+
+      G.mode = 'levelclear';
+      G.levelClearTimer = 2.25;
+      G.lastBonus = 500 * G.level + 200 * G.lives;
+      G.score += G.lastBonus;
+      G.best = Math.max(G.best, G.score);
+      G.keys.left = false;
+      G.keys.right = false;
+      G.paddle.targetX = null;
+      G.powerups = [];
+      G.particles = [];
+      G.floaters = [];
+      G.shake = 0;
+
+      spawnBurst(G.W / 2, G.H * 0.44, '#ffd66b', REDUCED_MOTION ? 12 : 32);
+      spawnBurst(G.W / 2, G.H * 0.44, '#4ff5ff', REDUCED_MOTION ? 8 : 20);
+      spawnBurst(G.W / 2, G.H * 0.44, '#ff4fa3', REDUCED_MOTION ? 8 : 20);
+      sfx('level');
+      saveBest();
+      updateHud();
+      updateBuffs();
+      setToast(`牌面清空 · 过关奖励 +${prettyNumber(G.lastBonus)}`, 2200);
+    }
+
+    function endGame() {
+      if (G.mode === 'gameover') return;
+
+      G.mode = 'gameover';
+      G.lives = 0;
+      G.keys.left = false;
+      G.keys.right = false;
+      G.paddle.targetX = null;
+      G.pointerDown = false;
+      G.powerups = [];
+      G.timers.wide = 0;
+      G.timers.x2 = 0;
+      G.shield = false;
+      G.shake = 16;
+      G.best = Math.max(G.best, G.score);
+      saveBest();
+      updateHud();
+      updateBuffs();
+      floatersClear();
+      if (toastTimeout) window.clearTimeout(toastTimeout);
+      toastEl.classList.remove('show');
+      sfx('over');
+      showGameOverScreen();
+    }
+
+    function nextLevel() {
+      G.level += 1;
+      setupLevel(G.level);
+      G.mode = 'playing';
+      G.lastFrame = performance.now();
+      setToast(`第 ${G.level} 关 · 球速与耐久提升`, 2300);
+      updateHud();
+      updateBuffs();
+      sfx('start');
+    }
+
+    /* ==========================================================
+       9. 粒子、浮动分数与道具
+       ========================================================== */
+    function spawnBurst(x, y, color, count = 12) {
+      const amount = REDUCED_MOTION ? Math.max(3, Math.ceil(count * 0.35)) : count;
+      const cap = REDUCED_MOTION ? 70 : 190;
+      for (let i = 0; i < amount; i++) {
+        if (G.particles.length >= cap) break;
+        const angle = rand(0, TAU);
+        const velocity = rand(35, 190);
+        const life = rand(0.26, 0.78);
+        G.particles.push({
+          x,
+          y,
+          vx: Math.cos(angle) * velocity,
+          vy: Math.sin(angle) * velocity - rand(0, 40),
+          life,
+          maxLife: life,
+          gravity: rand(45, 140),
+          size: rand(1.1, 3.7),
+          color
+        });
+      }
+    }
+
+    function updateParticles(dt) {
+      for (let i = G.particles.length - 1; i >= 0; i--) {
+        const particle = G.particles[i];
+        particle.life -= dt;
+        if (particle.life <= 0) {
+          G.particles.splice(i, 1);
+          continue;
+        }
+        particle.vy += particle.gravity * dt;
+        particle.x += particle.vx * dt;
+        particle.y += particle.vy * dt;
+        particle.vx *= Math.pow(0.4, dt);
+      }
+    }
+
+    function spawnFloater(x, y, text, color = '#ffffff', scale = 1) {
+      const life = 0.95;
+      G.floaters.push({ x, y, text, color, life, maxLife: life, scale });
+      if (G.floaters.length > 22) G.floaters.shift();
+    }
+
+    function updateFloaters(dt) {
+      for (let i = G.floaters.length - 1; i >= 0; i--) {
+        const floater = G.floaters[i];
+        floater.life -= dt;
+        floater.y -= 38 * dt;
+        if (floater.life <= 0) G.floaters.splice(i, 1);
+      }
+    }
+
+    function floatersClear() {
+      G.floaters = [];
+    }
+
+    function updateMotes(dt) {
+      G.motes.forEach((mote) => {
+        mote.phase += dt * 0.7;
+        mote.y -= mote.speed * dt;
+        if (mote.y < -30) {
+          mote.y = G.H + 30;
+          mote.x = rand(0, G.W);
+        }
+      });
+    }
+
+    const POWER_META = {
+      multi: { label: 'B', name: '多球分裂', color: '#4ff5ff' },
+      wide: { label: 'W', name: '加宽挡板', color: '#c0b1ff' },
+      x2: { label: '×2', name: '双倍筹码', color: '#ff4fa3' },
+      shield: { label: '◎', name: '护盾', color: '#ffd66b' },
+      life: { label: '+1', name: '额外筹码', color: '#64ffc4' }
+    };
+
+    function maybeDropPowerup(brick) {
+      if (G.powerups.length >= 3) return;
+
+      const chance = brick.special ? 0.94 : 0.06 + Math.min(G.level, 10) * 0.004;
+      if (Math.random() > chance) return;
+
+      let pool = ['multi', 'wide', 'x2', 'x2', 'shield'];
+      if (G.lives < 5) pool.push('life');
+      if (G.balls.length >= 5) pool = pool.filter((type) => type !== 'multi');
+      if (pool.length === 0) pool = ['x2'];
+
+      spawnPowerup(brick.x + brick.w / 2, brick.y + brick.h / 2, pick(pool));
+    }
+
+    function spawnPowerup(x, y, type) {
+      const radius = clamp(Math.min(G.W, G.H) * 0.027, 10, 18);
+      G.powerups.push({
+        x: clamp(x, radius + 3, G.W - radius - 3),
+        y,
+        type,
+        r: radius,
+        vy: G.H * 0.17,
+        phase: rand(0, TAU),
+        spin: rand(-1.4, 1.4),
+        life: 14
+      });
+    }
+
+    function updatePowerups(dt) {
+      const p = G.paddle;
+
+      for (let i = G.powerups.length - 1; i >= 0; i--) {
+        const token = G.powerups[i];
+        token.phase += dt * 2.4;
+        token.spin += dt * 0.8;
+        token.life -= dt;
+        token.y += token.vy * dt;
+        token.x += Math.sin(token.phase) * 16 * dt;
+
+        if (token.y - token.r > G.H + 15 || token.life <= 0) {
+          G.powerups.splice(i, 1);
+          continue;
+        }
+
+        const overlapsPaddle =
+          token.y + token.r >= p.y - p.h / 2 &&
+          token.y - token.r <= p.y + p.h / 2 &&
+          token.x + token.r >= p.x - p.w / 2 &&
+          token.x - token.r <= p.x + p.w / 2;
+
+        if (overlapsPaddle) {
+          G.powerups.splice(i, 1);
+          applyPowerup(token.type);
+        }
+      }
+    }
+
+    function applyPowerup(type) {
+      const meta = POWER_META[type];
+      if (!meta) return;
+
+      let applied = true;
+
+      switch (type) {
+        case 'multi': {
+          const moving = G.balls.find((ball) => !ball.attached);
+          const room = 5 - G.balls.length;
+          if (!moving || room <= 0) {
+            applied = false;
+            break;
+          }
+          const baseAngle = Math.atan2(moving.vy, moving.vx);
+          const addCount = Math.min(2, room);
+          for (let i = 0; i < addCount; i++) {
+            const angle = baseAngle + (i === 0 ? 0.42 : -0.42);
+            G.balls.push({
+              x: moving.x,
+              y: moving.y,
+              r: ballRadius(),
+              vx: Math.cos(angle) * moving.speed,
+              vy: Math.sin(angle) * moving.speed,
+              speed: moving.speed,
+              attached: false,
+              trail: []
+            });
+          }
+          spawnBurst(G.paddle.x, G.paddle.y - 12, meta.color, 18);
+          break;
+        }
+        case 'wide':
+          G.timers.wide = 12;
+          applyPaddleWidthFromPowerup();
+          break;
+        case 'x2':
+          G.timers.x2 = 10;
+          break;
+        case 'shield':
+          G.shield = true;
+          break;
+        case 'life':
+          if (G.lives < 5) {
+            G.lives += 1;
+          } else {
+            G.score += 300;
+            applied = false;
+            setToast('筹码已满 · 转化为 +300', 1500);
+          }
+          break;
+        default:
+          applied = false;
+      }
+
+      if (applied) {
+        setToast(`获得 ${meta.name}`, 1600);
+        spawnBurst(G.paddle.x, G.paddle.y - 16, meta.color, 20);
+        sfx(type === 'shield' ? 'shield' : 'power');
+      }
+
+      updateHud();
+      updateBuffs();
+    }
+
+    /* ==========================================================
+       10. 输入：键盘、指针 / 触屏
+       ========================================================== */
+    function clientXToWorld(clientX) {
+      const rect = canvas.getBoundingClientRect();
+      if (rect.width <= 0) return G.W / 2;
+      return ((clientX - rect.left) / rect.width) * G.W;
+    }
+
+    function setPaddleFromClientX(clientX) {
+      if (G.mode !== 'playing') return;
+      const p = G.paddle;
+      const x = clientXToWorld(clientX);
+      p.targetX = clamp(x, p.w / 2 + 4, G.W - p.w / 2 - 4);
+      p.x += (p.targetX - p.x) * 0.58;
+      p.x = clamp(p.x, p.w / 2 + 4, G.W - p.w / 2 - 4);
+    }
+
+    function positionAttachedBalls() {
+      const p = G.paddle;
+      G.balls.forEach((ball) => {
+        if (ball.attached) {
+          ball.x = p.x;
+          ball.y = p.y - p.h / 2 - ball.r - 5;
+        }
+      });
+    }
+
+    function launchServe() {
+      if (G.mode !== 'playing' || !G.awaitingServe) return;
+
+      let launched = false;
+      G.balls.forEach((ball) => {
+        if (!ball.attached) return;
+        const angle = -Math.PI / 2 + rand(-0.52, 0.52);
+        ball.attached = false;
+        ball.speed = ballSpeed();
+        ball.vx = Math.cos(angle) * ball.speed;
+        ball.vy = Math.sin(angle) * ball.speed;
+        ball.trail = [];
+        launched = true;
+      });
+
+      if (launched) {
+        G.awaitingServe = false;
+        hideToast();
+        spawnBurst(G.paddle.x, G.paddle.y - 18, '#4ff5ff', REDUCED_MOTION ? 4 : 10);
+        sfx('serve');
+      }
+    }
+
+    function hideToast() {
+      window.clearTimeout(toastTimeout);
+      toastEl.classList.remove('show');
+    }
+
+    function handlePointerDown(event) {
+      if (event.button !== undefined && event.button !== 0 && event.pointerType === 'mouse') return;
+      if (G.mode !== 'playing') return;
+
+      event.preventDefault();
+      ensureAudio();
+      G.pointerDown = true;
+      G.pointerId = event.pointerId;
+      setPaddleFromClientX(event.clientX);
+      positionAttachedBalls();
+
+      try {
+        canvas.setPointerCapture(event.pointerId);
+      } catch (error) {
+        /* 浏览器不支持指针捕获时忽略 */
+      }
+
+      if (G.awaitingServe) launchServe();
+    }
+
+    function handlePointerMove(event) {
+      if (G.mode !== 'playing') return;
+      const canMove = event.pointerType === 'mouse' || G.pointerDown;
+      if (!canMove) return;
+
+      if (G.pointerDown) event.preventDefault();
+      setPaddleFromClientX(event.clientX);
+      positionAttachedBalls();
+    }
+
+    function handlePointerUp(event) {
+      G.pointerDown = false;
+      G.pointerId = null;
+      if (canvas.hasPointerCapture && canvas.hasPointerCapture(event.pointerId)) {
+        try {
+          canvas.releasePointerCapture(event.pointerId);
+        } catch (error) {
+          /* 忽略 */
+        }
+      }
+    }
+
+    function onKeyDown(event) {
+      const key = event.key;
+      const lower = key.length === 1 ? key.toLowerCase() : key;
+
+      // 暂停键优先处理，即使焦点在按钮上也生效
+      if (key === 'Escape' || lower === 'p') {
+        if (G.mode === 'playing' || G.mode === 'paused') {
+          event.preventDefault();
+          togglePause();
+        }
+        return;
+      }
+
+      const target = event.target;
+      const interactiveTarget = target instanceof Element && target.closest('button, a, summary, input, textarea, select');
+      if (interactiveTarget) return;
+
+      if (key === 'ArrowLeft' || lower === 'a') {
+        if (G.mode === 'playing') {
+          event.preventDefault();
+          G.keys.left = true;
+          G.paddle.targetX = null;
+        }
+        return;
+      }
+
+      if (key === 'ArrowRight' || lower === 'd') {
+        if (G.mode === 'playing') {
+          event.preventDefault();
+          G.keys.right = true;
+          G.paddle.targetX = null;
+        }
+        return;
+      }
+
+      if (key === ' ' || key === 'Spacebar' || event.code === 'Space') {
+        if (event.repeat) return;
+
+        if (G.mode === 'playing') {
+          event.preventDefault();
+          ensureAudio();
+          if (G.awaitingServe) launchServe();
+        } else if (G.mode === 'paused') {
+          event.preventDefault();
+          resumeGame();
+        } else if (G.mode === 'start' || G.mode === 'gameover') {
+          event.preventDefault();
+          startGame();
+        }
+      }
+    }
+
+    function onKeyUp(event) {
+      const key = event.key;
+      const lower = key.length === 1 ? key.toLowerCase() : key;
+      if (key === 'ArrowLeft' || lower === 'a') G.keys.left = false;
+      if (key === 'ArrowRight' || lower === 'd') G.keys.right = false;
+    }
+
+    function clearKeyboard() {
+      G.keys.left = false;
+      G.keys.right = false;
+    }
+
+    /* ==========================================================
+       11. 每帧更新与物理
+       ========================================================== */
+    function updateTimers(dt) {
+      if (G.timers.wide > 0) {
+        G.timers.wide -= dt;
+        if (G.timers.wide <= 0) {
+          G.timers.wide = 0;
+          applyPaddleWidthFromPowerup();
+          setToast('加宽挡板已结束', 1200);
+        }
+      }
+
+      if (G.timers.x2 > 0) {
+        G.timers.x2 -= dt;
+        if (G.timers.x2 <= 0) {
+          G.timers.x2 = 0;
+          setToast('双倍筹码已结束', 1200);
+        }
+      }
+
+      if (G.shake > 0) {
+        G.shake = Math.max(0, G.shake - dt * 28);
+      }
+
+      updateBuffs();
+    }
+
+    function updatePaddle(dt) {
+      const p = G.paddle;
+      const oldX = p.x;
+      const keyboardSpeed = clamp(G.W * 1.15, 380, 1050);
+      const direction = (G.keys.right ? 1 : 0) - (G.keys.left ? 1 : 0);
+
+      if (direction !== 0) {
+        p.x += direction * keyboardSpeed * dt;
+      } else if (p.targetX !== null) {
+        p.x += (p.targetX - p.x) * Math.min(1, dt * 24);
+      }
+
+      p.x = clamp(p.x, p.w / 2 + 4, G.W - p.w / 2 - 4);
+      p.y = paddleBottomY();
+      p.vx = clamp((p.x - oldX) / Math.max(dt, 0.0001), -1400, 1400);
+
+      positionAttachedBalls();
+    }
+
+    function handlePaddleCollision(ball) {
+      const p = G.paddle;
+      if (ball.vy <= 0) return;
+
+      const nearestX = clamp(ball.x, p.x - p.w / 2, p.x + p.w / 2);
+      const nearestY = clamp(ball.y, p.y - p.h / 2, p.y + p.h / 2);
+      const dx = ball.x - nearestX;
+      const dy = ball.y - nearestY;
+
+      if (dx * dx + dy * dy > ball.r * ball.r) return;
+      if (ball.y > p.y + p.h) return;
+
+      ball.y = p.y - p.h / 2 - ball.r - 0.8;
+      const offset = clamp((ball.x - p.x) / (p.w / 2), -1, 1);
+      const spin = clamp(p.vx * 0.00011, -0.16, 0.16);
+      const angle = clamp(offset * (Math.PI / 3) + spin, -1.22, 1.22);
+
+      ball.speed = ballSpeed();
+      ball.vx = Math.sin(angle) * ball.speed;
+      ball.vy = -Math.cos(angle) * ball.speed;
+
+      G.combo = 0;
+      G.shake = Math.max(G.shake, 1.2);
+      spawnBurst(ball.x, p.y - p.h / 2, '#4ff5ff', REDUCED_MOTION ? 3 : 7);
+      sfx('paddle');
+      updateHud();
+    }
+
+    function damageBrick(index, ball) {
+      const brick = G.bricks[index];
+      if (!brick) return;
+
+      brick.hp -= 1;
+      brick.flash = 1;
+      const style = brick.special ? GOLD_STYLE : BRICK_STYLES[brick.styleIndex];
+
+      if (brick.hp > 0) {
+        spawnBurst(ball.x, ball.y, style.edge, REDUCED_MOTION ? 2 : 5);
+        sfx('brick');
+        return;
+      }
+
+      G.bricks.splice(index, 1);
+      G.bricksBroken += 1;
+      G.combo += 1;
+      G.maxCombo = Math.max(G.maxCombo, G.combo);
+
+      const comboMultiplier = Math.min(2.5, 1 + G.combo * 0.05);
+      const doubleMultiplier = G.timers.x2 > 0 ? 2 : 1;
+      const gain = Math.round(brick.points * comboMultiplier * doubleMultiplier);
+
+      G.score += gain;
+      if (G.score > G.best) G.best = G.score;
+
+      spawnBurst(
+        brick.x + brick.w / 2,
+        brick.y + brick.h / 2,
+        brick.special ? '#ffd66b' : style.edge,
+        REDUCED_MOTION ? 5 : (brick.special ? 22 : 12)
+      );
+      spawnFloater(
+        brick.x + brick.w / 2,
+        brick.y + brick.h / 2,
+        `+${prettyNumber(gain)}`,
+        brick.special ? '#ffe6a0' : '#e9fbff',
+        brick.special ? 1.15 : 0.9
+      );
+
+      if (brick.special) {
+        spawnFloater(
+          brick.x + brick.w / 2,
+          brick.y + brick.h / 2 - 16,
+          'JACKPOT',
+          '#ffd66b',
+          0.82
+        );
+        sfx('gold');
+      } else {
+        sfx('brick');
+      }
+
+      if (G.combo > 1 && G.combo % 5 === 0) {
+        spawnFloater(G.W / 2, G.H * 0.31, `COMBO ×${comboMultiplier.toFixed(2)}`, '#ffb6d7', 1.05);
+      }
+
+      maybeDropPowerup(brick);
+      updateHud();
+    }
+
+    function handleBrickCollision(ball) {
+      for (let i = G.bricks.length - 1; i >= 0; i--) {
+        const brick = G.bricks[i];
+        const brickCenterX = brick.x + brick.w / 2;
+        const brickCenterY = brick.y + brick.h / 2;
+        const overlapX = (ball.r + brick.w / 2) - Math.abs(ball.x - brickCenterX);
+        const overlapY = (ball.r + brick.h / 2) - Math.abs(ball.y - brickCenterY);
+
+        if (overlapX <= 0 || overlapY <= 0) continue;
+
+        if (overlapX < overlapY) {
+          if (ball.x < brickCenterX) {
+            ball.x -= overlapX;
+            ball.vx = -Math.abs(ball.vx);
+          } else {
+            ball.x += overlapX;
+            ball.vx = Math.abs(ball.vx);
+          }
+        } else if (ball.y < brickCenterY) {
+          ball.y -= overlapY;
+          ball.vy = -Math.abs(ball.vy);
+        } else {
+          ball.y += overlapY;
+          ball.vy = Math.abs(ball.vy);
+        }
+
+        damageBrick(i, ball);
+        break;
+      }
+    }
+
+    function saveBallWithShield(ball) {
+      if (!G.shield) return false;
+      G.shield = false;
+      ball.y = G.H - Math.max(36, G.H * 0.075);
+      ball.vy = -Math.abs(ball.vy || ball.speed);
+      ball.vx += rand(-0.18, 0.18) * ball.speed;
+      const magnitude = Math.hypot(ball.vx, ball.vy) || 1;
+      ball.vx = (ball.vx / magnitude) * ball.speed;
+      ball.vy = (ball.vy / magnitude) * ball.speed;
+      G.shake = Math.max(G.shake, 8);
+      spawnBurst(ball.x, G.H - 22, '#ffd66b', REDUCED_MOTION ? 7 : 20);
+      sfx('shield');
+      setToast('护盾抵消一次落球', 1600);
+      updateBuffs();
+      return true;
+    }
+
+    function loseLife() {
+      G.lives -= 1;
+      G.combo = 0;
+      G.maxCombo = Math.max(G.maxCombo, G.combo);
+      G.timers.wide = 0;
+      G.timers.x2 = 0;
+      G.shield = false;
+      G.powerups = [];
+      G.paddle.baseW = basePaddleWidth();
+      G.paddle.w = G.paddle.baseW;
+      G.paddle.x = clamp(G.paddle.x, G.paddle.w / 2 + 4, G.W - G.paddle.w / 2 - 4);
+      G.shake = Math.max(G.shake, 12);
+      spawnBurst(G.W / 2, G.H - 28, '#ff5d7a', REDUCED_MOTION ? 8 : 24);
+      sfx('lose');
+      updateBuffs();
+
+      if (G.lives <= 0) {
+        updateHud();
+        endGame();
+        return;
+      }
+
+      attachServeBall();
+      updateHud();
+      setToast(`光球落底 · 剩余 ${G.lives} 枚筹码`, 2200);
+    }
+
+    function updateBalls(dt) {
+      const p = G.paddle;
+      let lostCount = 0;
+
+      for (let i = G.balls.length - 1; i >= 0; i--) {
+        const ball = G.balls[i];
+
+        if (ball.attached) {
+          ball.x = p.x;
+          ball.y = p.y - p.h / 2 - ball.r - 5;
+          continue;
+        }
+
+        const distance = Math.hypot(ball.vx, ball.vy) * dt;
+        const stepLimit = Math.max(3.5, ball.r * 1.7);
+        const steps = clamp(Math.ceil(distance / stepLimit), 1, 10);
+        const stepDt = dt / steps;
+        let lost = false;
+
+        for (let step = 0; step < steps; step++) {
+          ball.x += ball.vx * stepDt;
+          ball.y += ball.vy * stepDt;
+
+          // 左右墙
+          if (ball.x - ball.r < 0) {
+            ball.x = ball.r;
+            ball.vx = Math.abs(ball.vx);
+            sfx('wall');
+          } else if (ball.x + ball.r > G.W) {
+            ball.x = G.W - ball.r;
+            ball.vx = -Math.abs(ball.vx);
+            sfx('wall');
+          }
+
+          // 顶部墙
+          if (ball.y - ball.r < 0) {
+            ball.y = ball.r;
+            ball.vy = Math.abs(ball.vy);
+            sfx('wall');
+          }
+
+          handlePaddleCollision(ball);
+          handleBrickCollision(ball);
+
+          // 防止球速因极端碰撞变成水平或垂直死角
+          const speedNow = Math.hypot(ball.vx, ball.vy);
+          if (speedNow > 0.01 && Math.abs(ball.vy) < speedNow * 0.075) {
+            ball.vy = (ball.vy >= 0 ? 1 : -1) * speedNow * 0.075;
+            const fixMag = Math.hypot(ball.vx, ball.vy) || 1;
+            ball.vx = (ball.vx / fixMag) * ball.speed;
+            ball.vy = (ball.vy / fixMag) * ball.speed;
+          }
+
+          if (ball.y - ball.r > G.H) {
+            if (saveBallWithShield(ball)) {
+              break;
+            }
+            lost = true;
+            break;
+          }
+        }
+
+        // 保存拖尾，数量很低，移动端也不会有明显负担
+        if (!lost) {
+          ball.trail.unshift({ x: ball.x, y: ball.y });
+          if (ball.trail.length > 9) ball.trail.pop();
+        }
+
+        if (lost) {
+          G.balls.splice(i, 1);
+          lostCount += 1;
+        }
+      }
+
+      if (lostCount > 0) {
+        if (G.balls.length === 0) {
+          loseLife();
+        } else {
+          G.combo = 0;
+          G.shake = Math.max(G.shake, 5);
+          sfx('lose');
+          setToast(`一枚能量球落底 · 仍有 ${G.balls.length} 枚在场`, 1500);
+          updateHud();
+        }
+      }
+    }
+
+    function updatePlaying(dt) {
+      updateTimers(dt);
+      updatePaddle(dt);
+      updateBalls(dt);
+      updatePowerups(dt);
+      updateParticles(dt);
+      updateFloaters(dt);
+
+      // 牌面清空后进入短暂的过关展示
+      if (G.mode === 'playing' && G.bricks.length === 0) {
+        completeLevel();
+      }
+    }
+
+    function updateAmbient(dt) {
+      updateMotes(dt);
+      updateParticles(dt);
+      updateFloaters(dt);
+
+      if (G.mode === 'start') {
+        const p = G.paddle;
+        p.x = G.W / 2 + Math.sin(G.time * 0.62) * G.W * 0.17;
+        p.y = paddleBottomY();
+        p.vx = 0;
+        positionAttachedBalls();
+      }
+
+      if (G.timers.wide > 0) {
+        G.timers.wide -= dt;
+        if (G.timers.wide <= 0) {
+          G.timers.wide = 0;
+          applyPaddleWidthFromPowerup();
+        }
+      }
+      if (G.timers.x2 > 0) {
+        G.timers.x2 -= dt;
+        if (G.timers.x2 <= 0) G.timers.x2 = 0;
+      }
+      updateBuffs();
+    }
+
+    /* ==========================================================
+       12. Canvas 绘制
+       ========================================================== */
+    function roundRectPath(x, y, w, h, radius) {
+      const r = Math.min(radius, w / 2, h / 2);
+      ctx.beginPath();
+      ctx.moveTo(x + r, y);
+      ctx.arcTo(x + w, y, x + w, y + h, r);
+      ctx.arcTo(x + w, y + h, x, y + h, r);
+      ctx.arcTo(x, y + h, x, y, r);
+      ctx.arcTo(x, y, x + w, y, r);
+      ctx.closePath();
+    }
+
+    function updateBricks(dt) {
+      G.bricks.forEach((brick) => {
+        if (brick.flash > 0) {
+          brick.flash = Math.max(0, brick.flash - dt * 6.5);
+        }
+      });
+    }
+
+    function drawBackground() {
+      const W = G.W;
+      const H = G.H;
+
+      const base = ctx.createLinearGradient(0, 0, 0, H);
+      base.addColorStop(0, '#080518');
+      base.addColorStop(0.52, '#050312');
+      base.addColorStop(1, '#020109');
+      ctx.fillStyle = base;
+      ctx.fillRect(0, 0, W, H);
+
+      // 紫色主光晕
+      const centerGlow = ctx.createRadialGradient(W * 0.5, H * 0.33, 0, W * 0.5, H * 0.33, Math.max(W, H) * 0.62);
+      centerGlow.addColorStop(0, 'rgba(99, 64, 186, 0.18)');
+      centerGlow.addColorStop(0.46, 'rgba(64, 37, 128, 0.07)');
+      centerGlow.addColorStop(1, 'rgba(3, 2, 10, 0)');
+      ctx.fillStyle = centerGlow;
+      ctx.fillRect(0, 0, W, H);
+
+      // 青色侧光
+      const sideGlow = ctx.createRadialGradient(W * 0.13, H * 0.62, 0, W * 0.13, H * 0.62, Math.max(W, H) * 0.45);
+      sideGlow.addColorStop(0, 'rgba(45, 187, 210, 0.075)');
+      sideGlow.addColorStop(1, 'rgba(3, 2, 10, 0)');
+      ctx.fillStyle = sideGlow;
+      ctx.fillRect(0, 0, W, H);
+
+      // 背景巨大 21 水印
+      ctx.save();
+      ctx.globalAlpha = 0.045;
+      ctx.fillStyle = '#c7b8ff';
+      ctx.font = `900 ${clamp(W * 0.34, 90, 310)}px "Arial Black", "Segoe UI Black", sans-serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('21', W / 2, H * 0.43);
+      ctx.restore();
+
+      // 透视地板网格
+      const horizon = H * 0.67;
+      ctx.save();
+      ctx.lineWidth = 1;
+      ctx.strokeStyle = 'rgba(79, 245, 255, 0.055)';
+      const vanishX = W / 2;
+      for (let i = -8; i <= 8; i++) {
+        const bottomX = vanishX + i * (W / 7.4);
+        ctx.beginPath();
+        ctx.moveTo(vanishX, horizon);
+        ctx.lineTo(bottomX, H + 2);
+        ctx.stroke();
+      }
+
+      const shift = (G.time * 0.065) % 1;
+      for (let i = 0; i < 13; i++) {
+        const t = (i + shift) / 13;
+        const y = horizon + Math.pow(t, 1.9) * (H - horizon + 20);
+        const alpha = 0.018 + t * 0.04;
+        ctx.strokeStyle = `rgba(174, 126, 255, ${alpha})`;
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(W, y);
+        ctx.stroke();
+      }
+
+      const horizonLine = ctx.createLinearGradient(0, 0, W, 0);
+      horizonLine.addColorStop(0, 'rgba(79, 245, 255, 0)');
+      horizonLine.addColorStop(0.22, 'rgba(79, 245, 255, 0.17)');
+      horizonLine.addColorStop(0.52, 'rgba(255, 79, 163, 0.22)');
+      horizonLine.addColorStop(0.78, 'rgba(79, 245, 255, 0.14)');
+      horizonLine.addColorStop(1, 'rgba(79, 245, 255, 0)');
+      ctx.strokeStyle = horizonLine;
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(0, horizon);
+      ctx.lineTo(W, horizon);
+      ctx.stroke();
+      ctx.restore();
+
+      // 漂浮花色
+      ctx.save();
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      G.motes.forEach((mote) => {
+        const pulse = 0.65 + Math.sin(G.time * 0.8 + mote.phase) * 0.35;
+        ctx.globalAlpha = mote.alpha * pulse;
+        ctx.fillStyle = mote.suit === '♥' || mote.suit === '♦' ? '#ff8ac1' : '#9eeeff';
+        ctx.font = `${mote.size}px Georgia, "Times New Roman", serif`;
+        ctx.fillText(mote.suit, mote.x, mote.y);
+      });
+      ctx.restore();
+
+      // 两侧霓虹轨道
+      ctx.save();
+      const rail = ctx.createLinearGradient(0, 0, 0, H);
+      rail.addColorStop(0, 'rgba(79, 245, 255, 0)');
+      rail.addColorStop(0.3, 'rgba(79, 245, 255, 0.13)');
+      rail.addColorStop(0.72, 'rgba(154, 108, 255, 0.1)');
+      rail.addColorStop(1, 'rgba(79, 245, 255, 0)');
+      ctx.strokeStyle = rail;
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(1.5, 0);
+      ctx.lineTo(1.5, H);
+      ctx.moveTo(W - 1.5, 0);
+      ctx.lineTo(W - 1.5, H);
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function drawBricks() {
+      G.bricks.forEach((brick) => {
+        const style = brick.special ? GOLD_STYLE : BRICK_STYLES[brick.styleIndex];
+        const x = brick.x;
+        const y = brick.y;
+        const w = brick.w;
+        const h = brick.h;
+        const centerX = x + w / 2;
+        const centerY = y + h / 2;
+        const radius = Math.min(w, h) * 0.18;
+        const flash = brick.flash || 0;
+
+        ctx.save();
+
+        if (brick.special) {
+          ctx.shadowColor = 'rgba(255, 214, 107, 0.55)';
+          ctx.shadowBlur = 11 + Math.sin(G.time * 2.4 + brick.phase) * 4;
+        }
+
+        const fill = ctx.createLinearGradient(0, y, 0, y + h);
+        fill.addColorStop(0, style.top);
+        fill.addColorStop(0.24, style.fill);
+        fill.addColorStop(1, 'rgba(5, 3, 14, 0.95)');
+        roundRectPath(x, y, w, h, radius);
+        ctx.fillStyle = fill;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+
+        ctx.lineWidth = brick.special ? 1.5 : 1;
+        ctx.strokeStyle = brick.special
+          ? `rgba(255, 224, 138, ${0.62 + Math.sin(G.time * 2.4 + brick.phase) * 0.18})`
+          : style.edge + '99';
+        ctx.stroke();
+
+        // 顶部高光
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.18)';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(x + radius + 2, y + 1);
+        ctx.lineTo(x + w - radius - 2, y + 1);
+        ctx.stroke();
+
+        // 金边牌扫光
+        if (brick.special) {
+          ctx.save();
+          roundRectPath(x, y, w, h, radius);
+          ctx.clip();
+          const shimmer = x + ((G.time * 68 + brick.phase * 70) % (w + 90)) - 45;
+          const shine = ctx.createLinearGradient(shimmer - 28, 0, shimmer + 28, 0);
+          shine.addColorStop(0, 'rgba(255, 255, 255, 0)');
+          shine.addColorStop(0.5, 'rgba(255, 245, 200, 0.16)');
+          shine.addColorStop(1, 'rgba(255, 255, 255, 0)');
+          ctx.fillStyle = shine;
+          ctx.fillRect(x, y, w, h);
+          ctx.restore();
+        }
+
+        // 扑克牌花色
+        ctx.globalAlpha = 0.92;
+        ctx.fillStyle = style.suit;
+        const suitSize = Math.min(h * 0.58, w * 0.34);
+        ctx.font = `600 ${Math.max(8, suitSize)}px Georgia, "Times New Roman", serif`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(brick.suit, centerX, centerY - (brick.maxHp > 1 ? h * 0.04 : 0));
+        ctx.globalAlpha = 1;
+
+        // 耐久点
+        if (brick.maxHp > 1) {
+          const dotRadius = clamp(h * 0.035, 1.2, 2.2);
+          const spacing = dotRadius * 3.4;
+          const startX = centerX - ((brick.maxHp - 1) * spacing) / 2;
+          for (let i = 0; i < brick.maxHp; i++) {
+            ctx.beginPath();
+            ctx.arc(startX + i * spacing, y + h - h * 0.16, dotRadius, 0, TAU);
+            if (i < brick.hp) {
+              ctx.fillStyle = brick.special ? '#fff0b8' : style.edge;
+              ctx.fill();
+            } else {
+              ctx.strokeStyle = 'rgba(255, 255, 255, 0.24)';
+              ctx.lineWidth = 1;
+              ctx.stroke();
+            }
+          }
+        }
+
+        // 受击白闪
+        if (flash > 0) {
+          roundRectPath(x, y, w, h, radius);
+          ctx.fillStyle = `rgba(255, 255, 255, ${flash * 0.42})`;
+          ctx.fill();
+        }
+
+        ctx.restore();
+      });
+    }
+
+    function drawPowerups() {
+      G.powerups.forEach((token) => {
+        const meta = POWER_META[token.type];
+        if (!meta) return;
+        const bob = Math.sin(token.phase) * 2;
+
+        ctx.save();
+        ctx.translate(token.x, token.y + bob);
+        ctx.rotate(Math.sin(token.phase * 0.7) * 0.08);
+
+        const halo = ctx.createRadialGradient(0, 0, token.r * 0.4, 0, 0, token.r * 2.2);
+        halo.addColorStop(0, meta.color + '2b');
+        halo.addColorStop(1, meta.color + '00');
+        ctx.fillStyle = halo;
+        ctx.beginPath();
+        ctx.arc(0, 0, token.r * 2.2, 0, TAU);
+        ctx.fill();
+
+        ctx.shadowColor = meta.color;
+        ctx.shadowBlur = 16;
+        ctx.beginPath();
+        ctx.arc(0, 0, token.r, 0, TAU);
+        ctx.fillStyle = 'rgba(6, 4, 17, 0.95)';
+        ctx.fill();
+        ctx.lineWidth = 1.7;
+        ctx.strokeStyle = meta.color;
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+
+        ctx.beginPath();
+        ctx.arc(0, 0, token.r * 0.74, 0, TAU);
+        ctx.strokeStyle = meta.color + '55';
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        // 筹码边缘刻度
+        for (let i = 0; i < 8; i++) {
+          const angle = (i / 8) * TAU;
+          const x1 = Math.cos(angle) * token.r * 0.84;
+          const y1 = Math.sin(angle) * token.r * 0.84;
+          const x2 = Math.cos(angle) * token.r * 0.96;
+          const y2 = Math.sin(angle) * token.r * 0.96;
+          ctx.beginPath();
+          ctx.moveTo(x1, y1);
+          ctx.lineTo(x2, y2);
+          ctx.strokeStyle = meta.color + '88';
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        }
+
+        ctx.fillStyle = meta.color;
+        ctx.font = `800 ${Math.max(8, token.r * 0.82)}px "Cascadia Code", "SFMono-Regular", Consolas, monospace`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(meta.label, 0, 0.5);
+
+        ctx.restore();
+      });
+    }
+
+    function drawShield() {
+      if (!G.shield) return;
+
+      const y = G.H - Math.max(22, G.H * 0.04);
+      ctx.save();
+      ctx.globalCompositeOperation = 'lighter';
+      const gradient = ctx.createLinearGradient(0, 0, G.W, 0);
+      gradient.addColorStop(0, 'rgba(255, 214, 107, 0)');
+      gradient.addColorStop(0.16, 'rgba(255, 214, 107, 0.5)');
+      gradient.addColorStop(0.5, 'rgba(255, 241, 190, 0.92)');
+      gradient.addColorStop(0.84, 'rgba(255, 214, 107, 0.5)');
+      gradient.addColorStop(1, 'rgba(255, 214, 107, 0)');
+      ctx.strokeStyle = gradient;
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      for (let x = 0; x <= G.W; x += 8) {
+        const wave = Math.sin(x * 0.035 + G.time * 3.2) * 2.3;
+        if (x === 0) ctx.moveTo(x, y + wave);
+        else ctx.lineTo(x, y + wave);
+      }
+      ctx.stroke();
+      ctx.restore();
+
+      ctx.save();
+      ctx.fillStyle = 'rgba(255, 214, 107, 0.62)';
+      ctx.font = `700 ${clamp(G.W * 0.012, 7, 10)}px "Cascadia Code", Consolas, monospace`;
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'bottom';
+      ctx.fillText('SHIELD', G.W - 12, y - 6);
+      ctx.restore();
+    }
+
+    function drawPaddle() {
+      const p = G.paddle;
+      const left = p.x - p.w / 2;
+      const top = p.y - p.h / 2;
+      const radius = p.h * 0.42;
+      const accent = G.timers.wide > 0 ? '#ffd66b' : '#5ff7ff';
+
+      // 底部投影光
+      ctx.save();
+      ctx.translate(p.x, p.y + p.h * 0.8);
+      ctx.scale(1, 0.30);
+      const underGlow = ctx.createRadialGradient(0, 0, 0, 0, 0, Math.max(20, p.w * 0.68));
+      underGlow.addColorStop(0, G.timers.wide > 0 ? 'rgba(255, 214, 107, 0.34)' : 'rgba(79, 245, 255, 0.30)');
+      underGlow.addColorStop(0.55, 'rgba(154, 108, 255, 0.10)');
+      underGlow.addColorStop(1, 'rgba(79, 245, 255, 0)');
+      ctx.fillStyle = underGlow;
+      ctx.beginPath();
+      ctx.arc(0, 0, Math.max(20, p.w * 0.68), 0, TAU);
+      ctx.fill();
+      ctx.restore();
+
+      // 挡板主体
+      ctx.save();
+      ctx.shadowColor = G.timers.x2 > 0 ? 'rgba(255, 79, 163, 0.65)' : 'rgba(79, 245, 255, 0.55)';
+      ctx.shadowBlur = 16;
+      const body = ctx.createLinearGradient(left, 0, left + p.w, 0);
+      body.addColorStop(0, '#18133a');
+      body.addColorStop(0.22, '#2f2267');
+      body.addColorStop(0.5, G.timers.x2 > 0 ? '#51204b' : '#132c4a');
+      body.addColorStop(0.78, '#2f2267');
+      body.addColorStop(1, '#18133a');
+      roundRectPath(left, top, p.w, p.h, radius);
+      ctx.fillStyle = body;
+      ctx.fill();
+      ctx.shadowBlur = 0;
+
+      ctx.strokeStyle = accent;
+      ctx.lineWidth = 1.4;
+      ctx.stroke();
+
+      // 中央能量条
+      const core = ctx.createLinearGradient(left, 0, left + p.w, 0);
+      core.addColorStop(0, 'rgba(79, 245, 255, 0)');
+      core.addColorStop(0.3, 'rgba(79, 245, 255, 0.8)');
+      core.addColorStop(0.7, 'rgba(255, 79, 163, 0.8)');
+      core.addColorStop(1, 'rgba(255, 79, 163, 0)');
+      ctx.fillStyle = core;
+      ctx.fillRect(left + p.w * 0.08, top + p.h * 0.45, p.w * 0.84, Math.max(1, p.h * 0.10));
+
+      // 两端灯点
+      [left + p.w * 0.06, left + p.w * 0.94].forEach((x, index) => {
+        ctx.beginPath();
+        ctx.arc(x, p.y, Math.max(1.5, p.h * 0.14), 0, TAU);
+        ctx.fillStyle = index === 0 ? '#ffd66b' : '#ff4fa3';
+        ctx.fill();
+      });
+
+      // 仅在足够宽时显示 21
+      if (p.w > 115) {
+        ctx.fillStyle = G.timers.wide > 0 ? 'rgba(255, 235, 169, 0.9)' : 'rgba(236, 255, 255, 0.8)';
+        ctx.font = `800 ${Math.max(7, p.h * 0.58)}px "Cascadia Code", Consolas, monospace`;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('21', p.x, p.y + 0.5);
+      }
+      ctx.restore();
+    }
+
+    function drawBalls() {
+      G.balls.forEach((ball) => {
+        // 拖尾
+        if (ball.trail.length > 1) {
+          ctx.save();
+          ctx.globalCompositeOperation = 'lighter';
+          for (let i = ball.trail.length - 1; i >= 0; i--) {
+            const point = ball.trail[i];
+            const ratio = 1 - i / ball.trail.length;
+            ctx.globalAlpha = ratio * 0.17;
+            ctx.fillStyle = G.timers.x2 > 0 ? '#ff7fbd' : '#6af8ff';
+            ctx.beginPath();
+            ctx.arc(point.x, point.y, ball.r * (0.22 + ratio * 0.72), 0, TAU);
+            ctx.fill();
+          }
+          ctx.restore();
+        }
+
+        // 外发光
+        ctx.save();
+        ctx.globalCompositeOperation = 'lighter';
+        const glow = ctx.createRadialGradient(ball.x, ball.y, 0, ball.x, ball.y, ball.r * 4.8);
+        glow.addColorStop(0, G.timers.x2 > 0 ? 'rgba(255, 190, 220, 0.92)' : 'rgba(220, 255, 255, 0.92)');
+        glow.addColorStop(0.28, G.timers.x2 > 0 ? 'rgba(255, 79, 163, 0.52)' : 'rgba(79, 245, 255, 0.46)');
+        glow.addColorStop(1, 'rgba(79, 245, 255, 0)');
+        ctx.fillStyle = glow;
+        ctx.beginPath();
+        ctx.arc(ball.x, ball.y, ball.r * 4.8, 0, TAU);
+        ctx.fill();
+        ctx.restore();
+
+        // 球芯
+        ctx.save();
+        ctx.shadowColor = G.timers.x2 > 0 ? '#ff4fa3' : '#4ff5ff';
+        ctx.shadowBlur = 16;
+        ctx.beginPath();
+        ctx.arc(ball.x, ball.y, ball.r, 0, TAU);
+        ctx.fillStyle = '#f5ffff';
+        ctx.fill();
+        ctx.shadowBlur = 0;
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.9)';
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        // 高光
+        ctx.beginPath();
+        ctx.arc(ball.x - ball.r * 0.28, ball.y - ball.r * 0.30, ball.r * 0.34, 0, TAU);
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.9)';
+        ctx.fill();
+        ctx.restore();
+      });
+    }
+
+    function drawParticles() {
+      if (G.particles.length === 0) return;
+      ctx.save();
+      ctx.globalCompositeOperation = 'lighter';
+      G.particles.forEach((particle) => {
+        const alpha = clamp(particle.life / particle.maxLife, 0, 1);
+        ctx.globalAlpha = alpha * 0.85;
+        ctx.fillStyle = particle.color;
+        ctx.beginPath();
+        ctx.arc(particle.x, particle.y, particle.size * (0.45 + alpha * 0.55), 0, TAU);
+        ctx.fill();
+      });
+      ctx.restore();
+    }
+
+    function drawFloaters() {
+      if (G.floaters.length === 0) return;
+      ctx.save();
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      const baseSize = clamp(G.W * 0.021, 10, 18);
+      G.floaters.forEach((floater) => {
+        const progress = 1 - floater.life / floater.maxLife;
+        const alpha = Math.sin(clamp(progress, 0, 1) * Math.PI);
+        ctx.globalAlpha = clamp(alpha + 0.15, 0, 1);
+        ctx.fillStyle = floater.color;
+        ctx.font = `800 ${baseSize * floater.scale}px "Cascadia Code", Consolas, monospace`;
+        ctx.shadowColor = floater.color;
+        ctx.shadowBlur = 8;
+        ctx.fillText(floater.text, floater.x, floater.y);
+        ctx.shadowBlur = 0;
+      });
+      ctx.restore();
+    }
+
+    function drawServeHint() {
+      if (!(G.mode === 'playing' && G.awaitingServe)) return;
+
+      const ball = G.balls.find((item) => item.attached);
+      if (!ball) return;
+
+      const pulse = 0.72 + Math.sin(G.time * 3.4) * 0.28;
+      const message = COARSE_POINTER ? '轻点发球' : '点击 / 空格发球';
+      const fontSize = clamp(G.W * 0.016, 8, 12);
+      ctx.save();
+      ctx.font = `700 ${fontSize}px "Segoe UI", "Microsoft YaHei", sans-serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      const textWidth = ctx.measureText(message).width;
+      const pillW = textWidth + 22;
+      const pillH = fontSize + 14;
+      const pillX = clamp(ball.x - pillW / 2, 8, G.W - pillW - 8);
+      const pillY = Math.max(8, ball.y - 52);
+
+      ctx.globalAlpha = pulse;
+      roundRectPath(pillX, pillY, pillW, pillH, pillH / 2);
+      ctx.fillStyle = 'rgba(5, 5, 18, 0.82)';
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(79, 245, 255, 0.36)';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+
+      ctx.fillStyle = '#baf9ff';
+      ctx.fillText(message, pillX + pillW / 2, pillY + pillH / 2 + 0.5);
+      ctx.globalAlpha = 1;
+
+      // 指向球的小三角
+      ctx.beginPath();
+      ctx.moveTo(ball.x - 4, pillY + pillH + 4);
+      ctx.lineTo(ball.x + 4, pillY + pillH + 4);
+      ctx.lineTo(ball.x, pillY + pillH + 10);
+      ctx.closePath();
+      ctx.fillStyle = 'rgba(79, 245, 255, 0.48)';
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function drawLevelClear() {
+      const total = 2.25;
+      const progress = clamp(1 - G.levelClearTimer / total, 0, 1);
+      const appear = 1 - Math.pow(1 - Math.min(progress / 0.18, 1), 3);
+      const panelW = Math.min(G.W * 0.82, 530);
+      const panelH = Math.min(G.H * 0.32, 184);
+      const panelX = (G.W - panelW) / 2;
+      const panelY = G.H * 0.37 - panelH / 2;
+
+      ctx.save();
+      ctx.fillStyle = `rgba(2, 1, 8, ${0.38 * appear})`;
+      ctx.fillRect(0, 0, G.W, G.H);
+
+      ctx.globalAlpha = appear;
+      ctx.translate(G.W / 2, panelY + panelH / 2);
+      const scale = 0.86 + appear * 0.14;
+      ctx.scale(scale, scale);
+      ctx.translate(-G.W / 2, -(panelY + panelH / 2));
+
+      const panelGradient = ctx.createLinearGradient(panelX, panelY, panelX, panelY + panelH);
+      panelGradient.addColorStop(0, 'rgba(49, 37, 89, 0.98)');
+      panelGradient.addColorStop(1, 'rgba(9, 6, 21, 0.98)');
+      ctx.shadowColor = 'rgba(255, 214, 107, 0.28)';
+      ctx.shadowBlur = 30;
+      roundRectPath(panelX, panelY, panelW, panelH, 18);
+      ctx.fillStyle = panelGradient;
+      ctx.fill();
+      ctx.shadowBlur = 0;
+      ctx.strokeStyle = 'rgba(255, 214, 107, 0.44)';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+
+      ctx.fillStyle = '#ffd66b';
+      ctx.font = `900 ${clamp(panelW * 0.06, 19, 31)}px "Arial Black", "Segoe UI Black", sans-serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('LEVEL CLEAR', G.W / 2, panelY + panelH * 0.28);
+
+      ctx.fillStyle = '#f5f1ff';
+      ctx.font = `700 ${clamp(panelW * 0.034, 12, 17)}px "Segoe UI", "Microsoft YaHei", sans-serif`;
+      ctx.fillText(`第 ${G.level} 关牌面清空`, G.W / 2, panelY + panelH * 0.5);
+
+      ctx.fillStyle = '#ffe7a6';
+      ctx.font = `800 ${clamp(panelW * 0.055, 19, 28)}px "Cascadia Code", Consolas, monospace`;
+      ctx.fillText(`+${prettyNumber(G.lastBonus)} 筹码`, G.W / 2, panelY + panelH * 0.72);
+
+      ctx.fillStyle = 'rgba(199, 191, 230, 0.6)';
+      ctx.font = `500 ${clamp(panelW * 0.025, 8, 11)}px "Segoe UI", "Microsoft YaHei", sans-serif`;
+      ctx.fillText('下一关正在洗牌…', G.W / 2, panelY + panelH * 0.88);
+      ctx.restore();
+    }
+
+    function draw() {
+      if (!ctx) return;
+
+      ctx.setTransform(G.dpr, 0, 0, G.dpr, 0, 0);
+      ctx.clearRect(0, 0, G.W, G.H);
+
+      drawBackground();
+
+      ctx.save();
+      if (G.shake > 0.1 && !REDUCED_MOTION) {
+        ctx.translate(rand(-G.shake, G.shake) * 0.32, rand(-G.shake, G.shake) * 0.32);
+      }
+
+      drawBricks();
+      drawPowerups();
+      drawShield();
+      drawPaddle();
+      drawBalls();
+      drawParticles();
+      drawFloaters();
+      ctx.restore();
+
+      if (G.mode === 'levelclear') {
+        drawLevelClear();
+      } else {
+        drawServeHint();
+      }
+    }
+
+    /* ==========================================================
+       13. 主循环、事件绑定与初始化
+       ========================================================== */
+    function frame(timestamp) {
+      if (!G.lastFrame) G.lastFrame = timestamp;
+      const rawDelta = (timestamp - G.lastFrame) / 1000;
+      const dt = clamp(rawDelta, 0, 0.033);
+      G.lastFrame = timestamp;
+      G.time += dt;
+
+      if (G.mode === 'playing') {
+        updatePlaying(dt);
+        updateBricks(dt);
+      } else if (G.mode === 'levelclear') {
+        G.levelClearTimer -= dt;
+        updateMotes(dt);
+        updateParticles(dt);
+        updateFloaters(dt);
+        updateBricks(dt);
+        if (G.levelClearTimer <= 0) {
+          nextLevel();
+        }
+      } else if (G.mode === 'start') {
+        updateAmbient(dt);
+        updateBricks(dt);
+      } else {
+        updateMotes(dt);
+        if (G.shake > 0) G.shake = Math.max(0, G.shake - dt * 28);
+      }
+
+      draw();
+      requestAnimationFrame(frame);
+    }
+
+    function bindEvents() {
+      startBtn.addEventListener('click', startGame);
+      restartBtn.addEventListener('click', startGame);
+      restartPauseBtn.addEventListener('click', startGame);
+      ctaStart.addEventListener('click', () => {
+        const gameColumn = $('play');
+
+        // 牌局已经在进行/暂停/过关展示时，不静默重开，只把玩家带回牌桌
+        if (G.mode === 'playing' || G.mode === 'paused' || G.mode === 'levelclear') {
+          if (gameColumn) {
+            gameColumn.scrollIntoView({
+              behavior: REDUCED_MOTION ? 'auto' : 'smooth',
+              block: 'center'
+            });
+          }
+          setToast(
+            G.mode === 'paused' ? '牌局暂停中 · 回到牌桌继续' : '牌局进行中 · 回到牌桌继续',
+            1800
+          );
+          return;
+        }
+
+        startGame();
+        if (gameColumn) {
+          gameColumn.scrollIntoView({
+            behavior: REDUCED_MOTION ? 'auto' : 'smooth',
+            block: 'center'
+          });
+        }
+      });
+
+      coverBtn.addEventListener('click', returnToStart);
+      coverPauseBtn.addEventListener('click', returnToStart);
+
+      howtoLink.addEventListener('click', () => {
+        const guide = $('guide');
+        if (guide) {
+          guide.scrollIntoView({
+            behavior: REDUCED_MOTION ? 'auto' : 'smooth',
+            block: 'start'
+          });
+        }
+      });
+
+      pauseBtn.addEventListener('click', () => {
+        ensureAudio();
+        sfx('click');
+        togglePause();
+      });
+
+      resumeBtn.addEventListener('click', resumeGame);
+
+      soundBtn.addEventListener('click', () => {
+        const turningOn = !G.soundOn;
+        G.soundOn = turningOn;
+        saveSound();
+        updateSoundButton();
+        if (turningOn) {
+          ensureAudio();
+          tone(640, 0.06, 'sine', 0.055);
+          setToast('声音已开启', 1200);
+        } else {
+          setToast('声音已关闭', 1200);
+        }
+
+        // 鼠标/触屏点击后焦点会留在按钮上，主动还给画布，避免方向键被
+        // interactiveTarget 判断拦下而无法移动挡板。
+        if (G.mode === 'playing') {
+          canvas.focus({ preventScroll: true });
+        }
+      });
+
+      canvas.addEventListener('pointerdown', handlePointerDown, { passive: false });
+      canvas.addEventListener('pointermove', handlePointerMove, { passive: false });
+      canvas.addEventListener('pointerup', handlePointerUp);
+      canvas.addEventListener('pointercancel', handlePointerUp);
+      canvas.addEventListener('pointerleave', () => {
+        if (!G.pointerDown) G.paddle.targetX = null;
+      });
+
+      window.addEventListener('keydown', onKeyDown, { passive: false });
+      window.addEventListener('keyup', onKeyUp);
+      window.addEventListener('blur', () => {
+        clearKeyboard();
+        G.pointerDown = false;
+        G.pointerId = null;
+        // 切到别的窗口/应用时自动暂停，避免玩家离开期间无操作丢球
+        if (G.mode === 'playing') pauseGame(true);
+      });
+
+      document.addEventListener('visibilitychange', () => {
+        saveBest();
+        if (document.hidden && G.mode === 'playing') {
+          pauseGame(true);
+        }
+      });
+
+      window.addEventListener('pagehide', saveBest);
+      window.addEventListener('beforeunload', saveBest);
+
+      let resizeFrame = 0;
+      let lastViewportWidth = window.innerWidth;
+      let lastViewportHeight = window.innerHeight;
+      const scheduleResize = () => {
+        if (resizeFrame) return;
+        resizeFrame = requestAnimationFrame(() => {
+          resizeFrame = 0;
+          const viewportChanged =
+            window.innerWidth !== lastViewportWidth ||
+            window.innerHeight !== lastViewportHeight;
+          lastViewportWidth = window.innerWidth;
+          lastViewportHeight = window.innerHeight;
+
+          const previousW = G.W;
+          const previousH = G.H;
+          resizeCanvas();
+          if (G.mode === 'start' && G.bricks.length === 0) {
+            setupAttract();
+          }
+
+          // 只响应真实窗口尺寸变化；布局回流导致的微小画布变化保持静默，
+          // 避免开局时“画面已适配尺寸”提示覆盖发球提示。
+          if (
+            viewportChanged &&
+            G.mode === 'playing' &&
+            G.bricks.length > 0 &&
+            (G.W !== previousW || G.H !== previousH)
+          ) {
+            setToast('画面已适配尺寸，继续击球', 1200);
+          }
+        });
+      };
+
+      if ('ResizeObserver' in window) {
+        const observer = new ResizeObserver(scheduleResize);
+        observer.observe(stage);
+      } else {
+        window.addEventListener('resize', scheduleResize);
+      }
+    }
+
+    function init() {
+      if (!ctx) {
+        startBtn.textContent = '当前浏览器不支持 Canvas';
+        startBtn.disabled = true;
+        return;
+      }
+
+      yearEl.textContent = String(new Date().getFullYear());
+      updateSoundButton();
+      updateHud();
+      bindEvents();
+
+      // 首次布局必须在屏幕容器有尺寸后执行
+      resizeCanvas();
+      G.mode = 'start';
+      setupAttract();
+      updateHud();
+      updateBuffs();
+
+      // 调试接口只在 ?debug=1 或本地 file: 预览时开放，方便自动化验收，不参与线上运行
+      const debugEnabled =
+        new URLSearchParams(window.location.search).has('debug') ||
+        window.location.protocol === 'file:';
+      if (debugEnabled) {
+        window.__NEON21__ = {
+          game: G,
+          startGame,
+          endGame,
+          pauseGame,
+          resumeGame,
+          nextLevel,
+          completeLevel,
+          applyPowerup,
+          spawnPowerup,
+          updateHud
+        };
+      }
+
+      G.lastFrame = performance.now();
+      requestAnimationFrame(frame);
+    }
+
+    init();
+  })();
+
+  </script>
+</body>
+</html>
